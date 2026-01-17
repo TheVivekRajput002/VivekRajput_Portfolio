@@ -10,6 +10,11 @@
     },
     [
         {
+            "project_img": "/assets/InvoicePlatformSS.png",
+            "project_name": "Smart Invoice & E-way bill System with Ai Integration",
+            "project_description": "A modern, full-featured business management application built with Next.js for managing customers, invoices, estimates, and inventory."
+        },
+        {
             "project_img": "/assets/JlugSummerSS2.webp",
             "project_name": "JEC Linux Users Group Summer School Website",
             "project_description": "Developed a web platform as part of a team that enables users to register for workshops, access detailed information about them, and submit feedback or reviews. "
@@ -18,11 +23,6 @@
             "project_img": "/assets/KrishiMitraSS.webp",
             "project_name": "Krishi Mitra",
             "project_description": "Collaborated in developing an AI-powered Smart Crop Advisory Platform that offers real-time farming insights, image-based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data-driven guidance."
-        },
-        {
-            "project_img": "/assets/NoteBlocSS.webp",
-            "project_name": "NoteBloc Landing Page",
-            "project_description": "Its a Landing Page with minimalistitc designa and animations providing the users all the necesaary information about the product"
         }
     ],
     [

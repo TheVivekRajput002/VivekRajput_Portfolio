@@ -21,6 +21,27 @@
         ]
     },
     {
+        "head": "Ai Integrated Smart Invoice & E-way bill System",
+        "year": "3rd semester",
+        "ss": "/assets/InvoicePlatformSS.png",
+        "content": "A modern, full-featured business management application built with Next.js for managing customers, invoices, estimates, and inventory",
+        "url": "https://hisabkitab1.vercel.app/",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/NextjsIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/TailwindcssIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/SupabaseIcon.png"
+            }
+        ]
+    },
+    {
         "head": "JEC Linux Users Group Summer School Website",
         "year": "2nd semester",
         "ss": "/assets/JlugSummerSS2.webp",

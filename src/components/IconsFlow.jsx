@@ -11,6 +11,7 @@ import PythonIcon from '/assets/PythonIcon.png'
 import FramermotionIcon from '/assets/FramermotionIcon.png'
 import FigmaIcon from '/assets/FigmaIcon.png'
 import TailwindcssIcon from '/assets/TailwindcssIcon.png'
+import NextjsIcon from '/assets/NextjsIcon.png'
 
 
 <img src="" />
@@ -21,15 +22,16 @@ export default function InfiniteFlow() {
     { id: 1, img: HtmlIcon },
     { id: 2, img: CssIcon },
     { id: 3, img: ReactIcon },
-    { id: 4, img: SupabaseIcon },
-    { id: 5, img: PostgresqlIcon },
-    { id: 6, img: MysqlIcon },
-    { id: 7, img: JavascriptIcon },
-    { id: 8, img: PythonIcon },
-    { id: 9, img: FramermotionIcon },
-    { id: 10, img: FigmaIcon },
-    { id: 11, img: TailwindcssIcon },
-    { id: 12, img: GithubIcon },
+    { id: 4, img: NextjsIcon },
+    { id: 5, img: SupabaseIcon },
+    { id: 6, img: PostgresqlIcon },
+    { id: 7, img: MysqlIcon },
+    { id: 8, img: JavascriptIcon },
+    { id: 9, img: PythonIcon },
+    { id: 10, img: FramermotionIcon },
+    { id: 11, img: FigmaIcon },
+    { id: 12, img: TailwindcssIcon },
+    { id: 13, img: GithubIcon },
   ];
 
   // Duplicate once for seamless loop

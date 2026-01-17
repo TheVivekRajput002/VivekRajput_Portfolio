@@ -23,7 +23,6 @@ body {
   /* for Firefox */
 }
 
-
 :root {
   --color-bg: light-dark(hsl(0 0% 96%), hsl(0 0% 4%));
   /* main bg  */
@@ -35,20 +34,20 @@ body {
   /* navbg */
   --color-darkgray: light-dark(hsl(0 0% 88% / 70%), hsl(0 0% 26% / 53%));
   /* navbar border, project img border  */
-  --color-maintext: light-dark(hsl(0 0% 5%), hsl(0 0% 95% ));
+  --color-maintext: light-dark(hsl(0 0% 5%), hsl(0 0% 95%));
   /* heading text, phone color  */
-  --color-sidetext: light-dark(hsl(0 0% 30%), hsl(0 0% 70% ));
+  --color-sidetext: light-dark(hsl(0 0% 30%), hsl(0 0% 70%));
   /* para text  */
   --color-infiniteimgbg: light-dark(hsl(0 0% 91% / 0.33), hsl(0 0% 50% / 0.08));
   /* infinitflow images bg   */
   --color-projectcardbg: light-dark(hsl(0 0% 93% / 0.21), hsl(0 0% 11.5%));
   /* project card bg  */
-  --color-gray: light-dark(hsl(0 0% 83%),  hsl(0 0% 29% / 0.46));
+  --color-gray: light-dark(hsl(0 0% 83%), hsl(0 0% 29% / 0.46));
   /* project card border, input border, phone screen border, phone outside border   */
-  
+
   --color-green: light-dark(#c4ffbb, #c6ffbb);
   --color-blueborder: light-dark(#a6cae8, #1455ada6);
-  --color-phone: light-dark(#000,#080c13);
+  --color-phone: light-dark(#000, #080c13);
   /* phone color  */
 }
 

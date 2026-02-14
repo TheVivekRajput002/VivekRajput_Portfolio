@@ -6,6 +6,8 @@
 body,
 html {
   font-family: 'Poppins', sans-serif;
+  background-color: light-dark(hsl(220 20% 97%), hsl(220 25% 6%));
+  color: light-dark(hsl(220 15% 10%), hsl(220 15% 95%));
 }
 
 * {
@@ -24,51 +26,66 @@ body {
 }
 
 :root {
-  --color-bg: light-dark(hsl(0 0% 96%), hsl(0 0% 4%));
-  /* main bg  */
-  --color-innerbg: light-dark(hsl(0 0% 94%), hsl(0 0% 10%));
-  /* innerbg  */
-  --color-lightgray: light-dark(hsl(0 0% 89%), hsl(0 0% 14% / 0.80));
-  /* l r border , in between lines, project button bg, input bg*/
-  --color-navbg: light-dark(hsl(0 0% 100% / 47%), hsl(0 0% 13% / 61%));
-  /* navbg */
-  --color-darkgray: light-dark(hsl(0 0% 88% / 70%), hsl(0 0% 26% / 53%));
-  /* navbar border, project img border  */
-  --color-maintext: light-dark(hsl(0 0% 5%), hsl(0 0% 95%));
-  /* heading text, phone color  */
-  --color-sidetext: light-dark(hsl(0 0% 30%), hsl(0 0% 70%));
-  /* para text  */
-  --color-infiniteimgbg: light-dark(hsl(0 0% 91% / 0.33), hsl(0 0% 50% / 0.08));
-  /* infinitflow images bg   */
-  --color-projectcardbg: light-dark(hsl(0 0% 93% / 0.21), hsl(0 0% 11.5%));
-  /* project card bg  */
-  --color-gray: light-dark(hsl(0 0% 83%), hsl(0 0% 29% / 0.46));
-  /* project card border, input border, phone screen border, phone outside border   */
+  /* ===== IMPROVED COLOR PALETTE ===== */
 
-  --color-green: light-dark(#c4ffbb, #c6ffbb);
-  --color-blueborder: light-dark(#a6cae8, #1455ada6);
-  --color-phone: light-dark(#000, #080c13);
-  /* phone color  */
+  /* Main Backgrounds */
+  --color-bg: light-dark(hsl(220 20% 97%), hsl(220 25% 6%));
+  --color-innerbg: light-dark(hsl(220 25% 95%), hsl(220 20% 10%));
+
+  /* Surface Colors */
+  --color-lightgray: light-dark(hsl(220 15% 90%), hsl(220 15% 15% / 0.85));
+  --color-projectcardbg: light-dark(hsl(220 20% 96% / 0.6), hsl(220 18% 12%));
+
+  /* Navigation */
+  --color-navbg: light-dark(hsl(220 30% 100% / 55%), hsl(220 25% 14% / 65%));
+
+  /* Borders */
+  --color-darkgray: light-dark(hsl(220 15% 85% / 75%), hsl(220 10% 28% / 55%));
+  --color-gray: light-dark(hsl(220 15% 88%), hsl(220 12% 30% / 0.5));
+
+  /* Text */
+  --color-maintext: light-dark(hsl(220 18% 8%), hsl(220 15% 96%));
+  --color-sidetext: light-dark(hsl(220 12% 35%), hsl(220 10% 68%));
+
+  /* Special Elements */
+  --color-infiniteimgbg: light-dark(hsl(220 20% 93% / 0.4), hsl(220 15% 50% / 0.1));
+
+  /* Accent Colors */
+  --color-green: light-dark(hsl(110 60% 45%), hsl(110 55% 65%));
+  --color-accent-primary: light-dark(hsl(250 70% 60%), hsl(250 70% 65%));
+  --color-accent-secondary: light-dark(hsl(190 70% 50%), hsl(190 65% 55%));
+
+  /* Phone Mock */
+  --color-blueborder: light-dark(hsl(210 50% 70%), hsl(210 60% 45% / 0.65));
+  --color-phone: light-dark(hsl(220 20% 5%), hsl(220 30% 8%));
+
+  /* Interactive States */
+  --color-hover: light-dark(hsl(220 25% 92%), hsl(220 18% 14%));
+  --color-focus: light-dark(hsl(250 70% 95%), hsl(250 40% 20%));
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg,
+      light-dark(hsl(250 70% 60%), hsl(250 70% 50%)) 0%,
+      light-dark(hsl(280 60% 60%), hsl(280 60% 45%)) 100%);
+
+  --gradient-accent: linear-gradient(135deg,
+      light-dark(hsl(190 70% 55%), hsl(190 65% 50%)) 0%,
+      light-dark(hsl(250 65% 60%), hsl(250 65% 55%)) 100%);
+
+  /* Shadows */
+  --shadow-sm: light-dark(0 2px 8px hsl(220 15% 50% / 0.08),
+      0 2px 8px hsl(220 50% 0% / 0.3));
+
+  --shadow-md: light-dark(0 4px 16px hsl(220 15% 50% / 0.12),
+      0 4px 16px hsl(220 50% 0% / 0.4));
+
+  --shadow-lg: light-dark(0 8px 24px hsl(220 15% 50% / 0.15),
+      0 8px 24px hsl(220 50% 0% / 0.5));
 }
 
-
-/* @theme {
-  --color-bg: white;
-  --color-maintext: black;
-  --color-sidetext: #656565;
-  --color-gray: #cfcece54;
-  --color-darkgray: #d1d1d140;
-  --color-primary: white;
-  --color-lightgray: #e1e1e1;
-} */
-
-/* :root {
-    --color-bg: rgb(0, 0, 0);
-    --color-maintext: rgb(255, 255, 255);
-    --color-sidetext: #b8b8b8;
-    --color-gray: #ffffff54;
-    --color-darkgray: #96939351;
-    --color-primary: rgb(38, 38, 38);
-    --color-navbg: #2222229b;
-    --color-lightgray: #4c4c4c; light-dark(#e1e1e1, #000000);
-  } */
+/* Optional: Add subtle glow effect for dark mode */
+@media (prefers-color-scheme: dark) {
+  .hover\:shadow-glow:hover {
+    box-shadow: 0 0 20px hsl(250 70% 60% / 0.3);
+  }
+}

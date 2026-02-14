@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import ReactIcon from '/assets/ReactIcon.png'
 import SupabaseIcon from '/assets/SupabaseIcon.png'
 import MysqlIcon from '/assets/MysqlIcon.png'
@@ -17,7 +18,10 @@ import NextjsIcon from '/assets/NextjsIcon.png'
 <img src="" />
 
 
-export default function InfiniteFlow() {
+export default function IconsFlow() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+
   const icons = [
     { id: 1, img: HtmlIcon },
     { id: 2, img: CssIcon },
@@ -38,7 +42,13 @@ export default function InfiniteFlow() {
   const items = [...icons, ...icons];
 
   return (
-    <div className="flex items-center justify-center">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.7 }}
+      className="flex items-center justify-center"
+    >
       <div className="w-full max-w-6xl relative overflow-hidden">
         {/* Left shadow overlay */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[var(--color-innerbg)] to-transparent z-10 pointer-events-none"></div>
@@ -88,6 +98,6 @@ export default function InfiniteFlow() {
           }
         }
       `}</style>
-    </div>
+    </motion.div>
   );
 }

@@ -1,17 +1,17 @@
 
 
 import React from 'react'
-import ProjectCard from '../components/ProjectCard'
+import ProjectCard2 from '../components/ProjectCard2'
 import ProjectsData from '../data/ProjectsData.json'
 
 
 const Projects = () => {
   return (
-    <div className='mx-6 mt-3'>
+    <div className='px-6'>
 
       {
         ProjectsData.map((project, index) => (
-          <ProjectCard
+          <ProjectCard2
             key={index}
             Head={project.head}
             SS={project.ss}

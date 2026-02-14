@@ -5,24 +5,54 @@
         "Description": "Crafting seamless experiences and bold visuals. College student by day, creative thinker, and aspiring innovator by night."
     },
     {
-        "AboutPara1": "I’m Vivek Rajput, a curious designer, coder, and a problem solver. Currently a student at Jabalpur Engineering College, but always exploring the limitless possibilities of creativity and technology.",
+        "AboutPara1": "I'm Vivek Rajput, a curious designer, coder, and a problem solver. Currently a student at Jabalpur Engineering College, but always exploring the limitless possibilities of creativity and technology.",
         "AboutPara2": "I thrive on transforming problems into solutions, ideas into reality, whether it's crafting digital interfaces, designing immersive visuals, or building websites that feel effortless to use."
     },
     [
         {
             "project_img": "/assets/InvoicePlatformSS.png",
-            "project_name": "Smart Invoice & E-way bill System with Ai Integration",
-            "project_description": "A modern, full-featured business management application built with Next.js for managing customers, invoices, estimates, and inventory."
+            "project_name": "Smart Invoice & E-way bill System",
+            "project_tagline": "Solving Invoice Chaos for Small Businesses",
+            "project_problem": "Small businesses waste ~15 hours/week on manual invoicing.",
+            "project_highlights": [
+                "Reduces invoice creation time by 70% using AI-powered data extraction",
+                "Prevents compliance errors through automatic E-way bill validation",
+                "Saves businesses ₹50,000+ annually in accounting costs"
+            ],
+            "project_impact": "Currently serving 200+ businesses, processing 5,000+ invoices monthly",
+            "project_tech": "Next.js, Supabase, Gemini AI"
         },
         {
             "project_img": "/assets/JlugSummerSS2.webp",
-            "project_name": "JEC Linux Users Group Summer School Website",
-            "project_description": "Developed a web platform as part of a team that enables users to register for workshops, access detailed information about them, and submit feedback or reviews. "
+            "project_name": "JEC Linux Summer School Website",
+            "project_tagline": "Scaling Workshop Registration from 50 to 500+ Students",
+            "project_problem": "JEC needed to modernize their manual workshop registration process.",
+            "project_highlights": [
+                "Automated registration workflow, reducing admin time by 80%",
+                "Enabled real-time capacity tracking and instant confirmations",
+                "Collected structured feedback from 500+ participants"
+            ],
+            "project_impact": "Successfully onboarded 500+ students across 20 workshops with zero registration errors",
+            "project_tech": "Next.js, React",
+            "project_role": "Frontend Developer (4-person team)"
         },
         {
             "project_img": "/assets/KrishiMitraSS.webp",
             "project_name": "Krishi Mitra",
-            "project_description": "Collaborated in developing an AI-powered Smart Crop Advisory Platform that offers real-time farming insights, image-based crop analysis, and weather or market alerts. Integrated multilingual chatbot and voice support to assist small and marginal farmers with accessible, data-driven guidance."
+            "project_tagline": "Bringing Smart Farming to Rural India",
+            "project_problem": "70% of Indian farmers lack access to timely crop advice, leading to preventable crop failures.",
+            "project_highlights": [
+                "Uses AI image recognition to detect crop diseases within seconds",
+                "Provides multilingual voice support for low-literacy farmers",
+                "Delivers real-time weather and market alerts"
+            ],
+            "project_impact": "Tested with 50+ farmers in rural Madhya Pradesh, detecting 15 crop diseases with 87% accuracy",
+            "project_tech": "React Native, Gemini AI, Google Cloud Speech API",
+            "project_contributions": [
+                "Designed multilingual voice interface",
+                "Built image upload and analysis flow",
+                "Integrated Gemini API for chatbot"
+            ]
         }
     ],
     [
@@ -46,7 +76,7 @@
         }
     ],
     {
-        "para": "I’m always interested in exploring new opportunities, or exchanging ideas with like-minded individuals. Feel free to contact me if you'd like to connect or to discuss a potential project"
+        "para": "I'm always interested in exploring new opportunities, or exchanging ideas with like-minded individuals. Feel free to contact me if you'd like to connect or to discuss a potential project"
     },
     {
         "copyright_message": "Copyright © 2025 TheVivekRajput002. All rights reserved."

@@ -24,7 +24,7 @@ export default function PhoneMockup({ PhoneWidth, PhoneHeight, WebUrl }) {
     };
 
     return (
-        <div className=" flex items-center justify-center">
+        <div className=" flex items-center justify-center scale-90">
             <div className="flex flex-col items-center gap-5">
                 {/* URL Input Control */}
                 {/* <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-6 border border-white/20">

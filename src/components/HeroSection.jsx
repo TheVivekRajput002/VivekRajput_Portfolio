@@ -99,7 +99,7 @@ const HeroSection = ({ Name, Role, Description }) => {
                             <span className="pulse-ring"></span>
                         </span>
                         Available For new project
-                        </span>
+                    </span>
                 </motion.span>
 
 

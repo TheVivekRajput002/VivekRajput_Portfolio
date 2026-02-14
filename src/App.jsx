@@ -2,14 +2,17 @@
 
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import Projects2 from './pages/Projects2'
 import NotFound from './pages/NotFound'
 import Navbar from '../src/components/Navbar'
 import { Routes, Route } from 'react-router-dom'
+import LocomotiveScroll from 'locomotive-scroll';
 
 
 
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>
@@ -23,6 +26,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/projects' element={<Projects />} />
+            <Route path='/projects2' element={<Projects2 />} />
             <Route path='/pagenotfound' element={<NotFound />} />
           </Routes>
 

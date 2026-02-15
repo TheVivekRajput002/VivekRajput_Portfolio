@@ -11,7 +11,7 @@ import About from '../components/About';
 import ProjectsSection from '../components/ProjectsSection';
 import HomeData from '../data/HomeData.json'
 import WorkExperience from '../components/WorkExperience';
-import TechSection from '../components/TechSection';
+import TechStackSection from '../components/TechStackSection';
 
 
 const Home = () => {
@@ -48,7 +48,7 @@ const Home = () => {
 
             <div className='mt-8'>
 
-              <TechSection />
+              <TechStackSection />
             </div>
                
 

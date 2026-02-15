@@ -11,16 +11,17 @@ import About from '../components/About';
 import ProjectsSection from '../components/ProjectsSection';
 import HomeData from '../data/HomeData.json'
 import WorkExperience from '../components/WorkExperience';
+import TechSection from '../components/TechSection';
 
 
 const Home = () => {
     return (
-        < div className='mx-[14%] pt-[10%] max-md:pt-[24%] max-md:mx-[5%] pb-90' data-scroll-section>
+        < div className='mx-[14%] mt-3 pt-[10%] max-md:pt-[24%] max-md:mx-[5%] pb-90' data-scroll-section>
             {/* 
             <div className='bg-[var(--color-innerbg)] text-[var(--color-maintext)] max-md:pt-[7vh] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
             </div> */}
 
-            <div className='relative bottom-13 max-md:bottom-10'>
+            <div className='relative  bottom-16 max-md:bottom-10'>
                 <HeroSection Name={HomeData[0].Name} Role={HomeData[0].Role} Description={HomeData[0].Description} />
             </div>
 
@@ -39,17 +40,20 @@ const Home = () => {
                 <InfiniteFlow />
             </motion.div>
 
-            <div className='relative top-90 max-md:top-65'>
+            <div className='relative top-84 max-md:top-65'>
 
-                <About Para1={HomeData[1].AboutPara1} Para2={HomeData[1].AboutPara2} />
-                <div className='mt-16'>
-                    <IconsFlow />
+         
 
-                </div>
+            <About Para1={HomeData[1].AboutPara1} Para2={HomeData[1].AboutPara2} />
+
+            <div className='mt-8'>
+
+              <TechSection />
+            </div>
+               
+
 
                 <ProjectsSection projects={HomeData[2]} />
-
-                
 
                 <WorkExperience experience={HomeData[3]} />
 

@@ -63,15 +63,6 @@ body {
   --color-hover: light-dark(hsl(220 25% 92%), hsl(220 18% 14%));
   --color-focus: light-dark(hsl(250 70% 95%), hsl(250 40% 20%));
 
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg,
-      light-dark(hsl(250 70% 60%), hsl(250 70% 50%)) 0%,
-      light-dark(hsl(280 60% 60%), hsl(280 60% 45%)) 100%);
-
-  --gradient-accent: linear-gradient(135deg,
-      light-dark(hsl(190 70% 55%), hsl(190 65% 50%)) 0%,
-      light-dark(hsl(250 65% 60%), hsl(250 65% 55%)) 100%);
-
   /* Shadows */
   --shadow-sm: light-dark(0 2px 8px hsl(220 15% 50% / 0.08),
       0 2px 8px hsl(220 50% 0% / 0.3));

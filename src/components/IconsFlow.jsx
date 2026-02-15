@@ -13,6 +13,10 @@ import FramermotionIcon from '/assets/icons/FramermotionIcon.png'
 import FigmaIcon from '/assets/icons/FigmaIcon.png'
 import TailwindcssIcon from '/assets/icons/TailwindcssIcon.png'
 import NextjsIcon from '/assets/icons/NextjsIcon.png'
+import ExpressjsIcon from '/assets/icons/expressjs_.png'
+import NodejsIcon from '/assets/icons/nodejs_.png'
+import MongoDBIcon from '/assets/icons/mongodb_.png'
+import TypescriptIcon from '/assets/icons/TypescriptIcon.png'
 
 
 <img src="" />
@@ -35,7 +39,10 @@ export default function IconsFlow() {
     { id: 10, img: FramermotionIcon },
     { id: 11, img: FigmaIcon },
     { id: 12, img: TailwindcssIcon },
-    { id: 13, img: GithubIcon },
+    { id: 13, img: NodejsIcon },
+    { id: 14, img: ExpressjsIcon },
+    { id: 15, img: MongoDBIcon },
+    { id: 16, img: TypescriptIcon },
   ];
 
   // Duplicate once for seamless loop

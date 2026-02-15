@@ -4,6 +4,8 @@ import JlugSummerSS2 from '/assets/SS/JlugSummerSS2.webp'
 import KrishiMitraSS from '/assets/SS/KrishiMitraSS.webp'
 import InvoicePlatformSS from '/assets/SS/InvoicePlatformSS.png'
 import { Link } from 'react-router-dom'
+import IconsFlow from './IconsFlow'
+
 
 
 const ProjectsSection = ({ projects }) => {
@@ -61,6 +63,10 @@ const ProjectsSection = ({ projects }) => {
             >
                 Here's What I've <br />Been Up To.
             </motion.h2>
+
+               <div className='mt-8 mb-8'>
+                    <IconsFlow />
+            </div>
 
             <div className='flex flex-col gap-2'>
 

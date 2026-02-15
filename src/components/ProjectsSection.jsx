@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import JlugSummerSS2 from '/assets/JlugSummerSS2.webp'
-import KrishiMitraSS from '/assets/KrishiMitraSS.webp'
-import InvoicePlatformSS from '/assets/InvoicePlatformSS.png'
+import JlugSummerSS2 from '/assets/SS/JlugSummerSS2.webp'
+import KrishiMitraSS from '/assets/SS/KrishiMitraSS.webp'
+import InvoicePlatformSS from '/assets/SS/InvoicePlatformSS.png'
 import { Link } from 'react-router-dom'
 
 

@@ -48,28 +48,32 @@ export default function Navbar() {
         className="max-md:hidden fixed top-7 z-100 left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-2 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-20">
 
         {/* Home */}
-        <Link to="/" className="h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/" className="relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <House strokeWidth={1.5} color='var(--color-maintext)' />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Home</span>
         </Link>
 
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
 
         {/* Linkedin */}
-        <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <Linkedin stroke='var(--color-maintext)' strokeWidth={1.5} />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">LinkedIn</span>
         </a>
 
         {/* projects */}
-        <Link to="/projects" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/projects" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <Folders strokeWidth={1.5} color='var(--color-maintext)' />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Projects</span>
         </Link>
 
         {/* CV  */}
         {/* <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a> */}
-        <Link to="/pagenotfound" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/pagenotfound" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Resume</span>
         </Link>
 
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
@@ -179,8 +183,9 @@ export default function Navbar() {
         }}
         className="z-60 md:hidden fixed bottom-[3vh] left-1/2 -translate-x-1/2 flex items-center justify-around gap-[3vw] px-4 py-4 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] backdrop-blur-8xl">
 
-        <Link to="/" className="h-auto flex items-center gap-2 px-2 py-1 rounded-2xl">
+        <Link to="/" className="relative group h-auto flex items-center gap-2 px-2 py-1 rounded-2xl">
           <House strokeWidth={1.5} color='var(--color-maintext)' />
+          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Home</span>
         </Link>
 
 
@@ -190,19 +195,22 @@ export default function Navbar() {
         {/* <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl ">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a> */}
-        <Link to="/pagenotfound" className="flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="/pagenotfound" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
+          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Resume</span>
         </Link>
 
         {/* Linkedin */}
-        <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl">
+        <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="relative group flex items-center gap-2 px-2 py-1 rounded-xl">
           <Linkedin stroke='var(--color-maintext)' strokeWidth={1.5} />
+          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">LinkedIn</span>
         </a>
 
         {/* projects  */}
 
-        <Link to="/projects" className="flex items-center gap-2 px-2 py-1 rounded-xl">
+        <Link to="/projects" className="relative group flex items-center gap-2 px-2 py-1 rounded-xl">
           <Folders strokeWidth={1.5} color='var(--color-maintext)' />
+          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Projects</span>
         </Link>
 
 

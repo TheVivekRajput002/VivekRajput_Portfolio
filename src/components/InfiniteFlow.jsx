@@ -1,14 +1,11 @@
-import JlugSummerSS2 from '/assets/JlugSummerSS2.webp'
-import KrishiMitraSS from '/assets/KrishiMitraSS.webp'
-import NoteBlocSS from '/assets/NoteBlocSS.webp'
-import TheZenWebsiteSS from '/assets/TheZenWebsiteSS.webp'
+
 
 export default function InfiniteFlow() {
   const images = [
-    { id: 1, src: '/assets/JlugSummerSS2.webp', alt: "Jlug Summer" },
-    { id: 2, src: '/assets/KrishiMitraSS.webp', alt: "Krishi Mitra" },
-    { id: 3, src: '/assets/NoteBlocSS.webp', alt: "Note Bloc" },
-    { id: 4, src: '/assets/TheZenWebsiteSS.webp', alt: "The Zen" },
+    { id: 1, src: '/assets/SS/JlugSummerSS2.webp', alt: "Jlug Summer" },
+    { id: 2, src: '/assets/SS/KrishiMitraSS.webp', alt: "Krishi Mitra" },
+    { id: 3, src: '/assets/SS/NoteBlocSS.webp', alt: "Note Bloc" },
+    { id: 4, src: '/assets/SS/TheZenWebsiteSS.webp', alt: "The Zen" },
   ];
 
   return (

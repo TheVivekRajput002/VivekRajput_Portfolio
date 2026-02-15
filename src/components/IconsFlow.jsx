@@ -1,18 +1,18 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import ReactIcon from '/assets/ReactIcon.png'
-import SupabaseIcon from '/assets/SupabaseIcon.png'
-import MysqlIcon from '/assets/MysqlIcon.png'
-import PostgresqlIcon from '/assets/PostgresqlIcon.png'
-import HtmlIcon from '/assets/HtmlIcon.png'
-import CssIcon from '/assets/CssIcon.png'
-import JavascriptIcon from '/assets/JavascriptIcon.png'
-import GithubIcon from '/assets/GithubIcon.png'
-import PythonIcon from '/assets/PythonIcon.png'
-import FramermotionIcon from '/assets/FramermotionIcon.png'
-import FigmaIcon from '/assets/FigmaIcon.png'
-import TailwindcssIcon from '/assets/TailwindcssIcon.png'
-import NextjsIcon from '/assets/NextjsIcon.png'
+import ReactIcon from '/assets/icons/ReactIcon.png'
+import SupabaseIcon from '/assets/icons/SupabaseIcon.png'
+import MysqlIcon from '/assets/icons/MysqlIcon.png'
+import PostgresqlIcon from '/assets/icons/PostgresqlIcon.png'
+import HtmlIcon from '/assets/icons/HtmlIcon.png'
+import CssIcon from '/assets/icons/CssIcon.png'
+import JavascriptIcon from '/assets/icons/JavascriptIcon.png'
+import GithubIcon from '/assets/icons/GithubIcon.png'
+import PythonIcon from '/assets/icons/PythonIcon.png'
+import FramermotionIcon from '/assets/icons/FramermotionIcon.png'
+import FigmaIcon from '/assets/icons/FigmaIcon.png'
+import TailwindcssIcon from '/assets/icons/TailwindcssIcon.png'
+import NextjsIcon from '/assets/icons/NextjsIcon.png'
 
 
 <img src="" />

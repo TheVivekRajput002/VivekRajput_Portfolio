@@ -51,7 +51,7 @@ body {
   --color-infiniteimgbg: light-dark(hsl(220 20% 93% / 0.4), hsl(220 15% 50% / 0.1));
 
   /* Accent Colors */
-  --color-green: light-dark(hsl(110 60% 45%), hsl(110 55% 65%));
+   --color-green: light-dark(hsl(110, 100%, 84%), hsl(110, 91%, 82%));
   --color-accent-primary: light-dark(hsl(250 70% 60%), hsl(250 70% 65%));
   --color-accent-secondary: light-dark(hsl(190 70% 50%), hsl(190 65% 55%));
 

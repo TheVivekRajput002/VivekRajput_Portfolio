@@ -12,7 +12,7 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
         <div>
             <div className='mt-6 max-md:flex-col-reverse '>
 
-                <div className='grid grid-cols-[275px_auto]'>
+                <div className='grid grid-cols-[250px_auto] -mb-20 gap-2'>
 
                     {/* phone  */}
                     <motion.div
@@ -26,7 +26,7 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
                             duration: 0.6,
                             delay: 0.9
                         }}
-                        className='max-md:hidden scale-80 -mt-20'
+                        className='max-md:hidden scale-78 -mt-23 '
                     >
                         <Phone PhoneWidth={`w-[335px]`} PhoneHeight={`h-[92vh]`} WebUrl={Url} />
                     </motion.div>
@@ -64,7 +64,7 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
                             }}
                             className='relative z-4 rounded-xl p-2 bg-[var(--color-projectcardbg)] shadow-sm hover:shadow-lg hover:scale-101 transition-all'
                         >
-                            <img src={SS} alt={Head} className='w-[100%] -py-10 mb-1 rounded-lg border-[var(--color-darkgray)] border-solid border-[0.5px]' />
+                            <img src={SS} alt={Head} className='w-[100%] -py-10 rounded-lg border-[var(--color-darkgray)] border-solid border-[0.5px]' />
                         </motion.div>
                     </div>
 

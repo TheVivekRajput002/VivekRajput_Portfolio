@@ -61,7 +61,7 @@
     {
         "head": "JEC Linux Summer School Website",
         "year": "2nd semester",
-        "ss": "/assets/JlugSummerSS2.webp",
+        "ss": "/assets/JlugSummerSS2.png",
         "tagline": "Scaling Workshop Registration from 50 to 500+ Students",
         "problem": "JEC needed to modernize their manual workshop registration process that couldn't handle growing demand.",
         "highlights": [
@@ -72,7 +72,7 @@
         "impact": "Successfully onboarded 500+ students across 20 workshops with zero registration errors",
         "tech": "React, Next.js, Tailwind CSS, Supabase",
         "role": "Frontend Developer (4-person team)",
-        "url": "http://notcompletedyet",
+        "url": "https://summerschooljlug.netlify.app/",
         "icons": [
             {
                 "id": 1,
@@ -125,7 +125,7 @@
     {
         "head": "JEC Robotics Lab Official Website",
         "year": "2nd semester",
-        "ss": "/assets/RoboticsLabSS.png",
+        "ss": "/assets/RoboticsLabSS2.png",
         "tagline": "Showcasing Innovation in Robotics & IoT",
         "problem": "The lab needed a professional web presence to attract students, showcase projects, and highlight IIT Bombay collaboration.",
         "highlights": [
@@ -136,7 +136,7 @@
         "impact": "Increased lab membership applications by 60% and improved project visibility",
         "tech": "React, CSS, Tailwind CSS",
         "role": "Lead Designer & Developer",
-        "url": "https://notcompletedyet",
+        "url": "https://iot-robotics-lab-jec.github.io/",
         "icons": [
             {
                 "id": 1,

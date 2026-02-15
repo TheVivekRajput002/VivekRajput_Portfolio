@@ -6,7 +6,7 @@ import isDark from '../components/Navbar'
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
 
-const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech, role, contributions, icons, year }) => {
+const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech, role, contributions, icons, year}) => {
 
     return (
         <div>
@@ -43,7 +43,7 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
                                 {year}
                             </p>
                             <button className='bg-[var(--color-lightgray)] mt-4 text-[var(--color-maintext)] rounded-2xl px-6 py-3 font-[500] text-sm max-md:text-sm hover:shadow-md hover:scale-102 transition-all border border-[var(--color-gray)]'>
-                                <Link to="/pagenotfound">View Project &gt;</Link>
+                                <Link to={Url} target="_blank" >View Project &gt;</Link>
                             </button>
                         </motion.div>
 

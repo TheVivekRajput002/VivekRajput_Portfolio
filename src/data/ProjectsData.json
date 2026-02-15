@@ -2,7 +2,7 @@
     {
         "head": "Vivek Rajput's Portfolio",
         "year": "3rd semester",
-        "ss": "/assets/PortfolioSS.png",
+        "ss": "/assets/SS/PortfolioSS.png",
         "tagline": "Showcasing Design & Development Excellence",
         "problem": "Needed a compelling digital presence to showcase technical skills and creative work to potential employers and clients.",
         "highlights": [
@@ -16,22 +16,22 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/ReactIcon.png"
+                "img": "/assets/icons/ReactIcon.png"
             },
             {
                 "id": 2,
-                "img": "/assets/TailwindcssIcon.png"
+                "img": "/assets/icons/TailwindcssIcon.png"
             },
             {
                 "id": 3,
-                "img": "/assets/FramermotionIcon.png"
+                "img": "/assets/icons/FramermotionIcon.png"
             }
         ]
     },
     {
         "head": "Smart Invoice & E-way bill System",
         "year": "3rd semester",
-        "ss": "/assets/InvoicePlatformSS.png",
+        "ss": "/assets/SS/InvoicePlatformSS.png",
         "tagline": "Solving Invoice Chaos for Small Businesses",
         "problem": "Small businesses waste ~15 hours/week on manual invoicing and struggle with compliance.",
         "highlights": [
@@ -46,22 +46,22 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/NextjsIcon.png"
+                "img": "/assets/icons/NextjsIcon.png"
             },
             {
                 "id": 2,
-                "img": "/assets/TailwindcssIcon.png"
+                "img": "/assets/icons/TailwindcssIcon.png"
             },
             {
                 "id": 3,
-                "img": "/assets/SupabaseIcon.png"
+                "img": "/assets/icons/SupabaseIcon.png"
             }
         ]
     },
     {
         "head": "JEC Linux Summer School Website",
         "year": "2nd semester",
-        "ss": "/assets/JlugSummerSS2.png",
+        "ss": "/assets/SS/JlugSummerSS2.png",
         "tagline": "Scaling Workshop Registration from 50 to 500+ Students",
         "problem": "JEC needed to modernize their manual workshop registration process that couldn't handle growing demand.",
         "highlights": [
@@ -76,22 +76,22 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/ReactIcon.png"
+                "img": "/assets/icons/ReactIcon.png"
             },
             {
                 "id": 2,
-                "img": "/assets/TailwindcssIcon.png"
+                "img": "/assets/icons/TailwindcssIcon.png"
             },
             {
                 "id": 3,
-                "img": "/assets/SupabaseIcon.png"
+                "img": "/assets/icons/SupabaseIcon.png"
             }
         ]
     },
     {
         "head": "Krishi Mitra",
         "year": "3rd semester",
-        "ss": "/assets/KrishiMitraSS.webp",
+        "ss": "/assets/SS/KrishiMitraSS.webp",
         "tagline": "Bringing Smart Farming to Rural India",
         "problem": "70% of Indian farmers lack access to timely crop advice, leading to preventable crop failures.",
         "highlights": [
@@ -110,22 +110,22 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/ReactIcon.png"
+                "img": "/assets/icons/ReactIcon.png"
             },
             {
                 "id": 2,
-                "img": "/assets/TailwindcssIcon.png"
+                "img": "/assets/icons/TailwindcssIcon.png"
             },
             {
                 "id": 3,
-                "img": "/assets/SupabaseIcon.png"
+                "img": "/assets/icons/SupabaseIcon.png"
             }
         ]
     },
     {
         "head": "JEC Robotics Lab Official Website",
         "year": "2nd semester",
-        "ss": "/assets/RoboticsLabSS2.png",
+        "ss": "/assets/SS/RoboticsLabSS2.png",
         "tagline": "Showcasing Innovation in Robotics & IoT",
         "problem": "The lab needed a professional web presence to attract students, showcase projects, and highlight IIT Bombay collaboration.",
         "highlights": [
@@ -140,15 +140,15 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/ReactIcon.png"
+                "img": "/assets/icons/ReactIcon.png"
             },
             {
                 "id": 2,
-                "img": "/assets/CssIcon.png"
+                "img": "/assets/icons/CssIcon.png"
             },
             {
                 "id": 3,
-                "img": "/assets/TailwindcssIcon.png"
+                "img": "/assets/icons/TailwindcssIcon.png"
             }
         ]
     }

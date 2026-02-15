@@ -49,6 +49,8 @@ const Home = () => {
 
                 <ProjectsSection projects={HomeData[2]} />
 
+                
+
                 <WorkExperience experience={HomeData[3]} />
 
                 <div className='border-solid border-[var(--color-sidetext)] border-b-[0.5px] w-[90%] mx-auto mt-[5vh]'></div>

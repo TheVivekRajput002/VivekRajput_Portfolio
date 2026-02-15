@@ -13,7 +13,7 @@ const WorkExperience = ({ experience }) => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className='font-[500] text-3xl max-md:text-2xl mb-8 mt-6 text-[var(--color-maintext)]'>Work Experience</h2>
+                <h2 className='font-[500] text-3xl max-md:text-2xl mb-8 mt-8 text-[var(--color-maintext)]'>Work Experience</h2>
 
                 <div className='flex flex-col gap-4'>
 

@@ -10,9 +10,9 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
 
     return (
         <div>
-            <div className='mt-6 max-md:flex-col-reverse flex flex-col gap-3'>
+            <div className='mt-6  flex flex-col gap-3 mt-2'>
 
-                <div className='grid grid-cols-[250px_auto] -mb-20 gap-2'>
+                <div className='grid grid-cols-[250px_auto] max-md:grid-cols-1 -mb-20 max-md:mb-0 gap-2'>
 
                     {/* phone  */}
                     <motion.div

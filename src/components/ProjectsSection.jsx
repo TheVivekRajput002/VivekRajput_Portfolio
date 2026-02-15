@@ -62,7 +62,7 @@ const ProjectsSection = ({ projects }) => {
                 Here's What I've <br />Been Up To.
             </motion.h2>
 
-            <div className='flex flex-col gap-6'>
+            <div className='flex flex-col gap-2'>
 
                 {projectData.map((project, index) => (
                     <motion.div
@@ -70,7 +70,7 @@ const ProjectsSection = ({ projects }) => {
                         initial={{ opacity: 0, y: 60 }}
                         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
                         transition={{ duration: 0.6, delay: index * 0.15 }}
-                        className='border-[var(--color-gray)] border-solid border-[0.5px] rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-3 max-md:m-0 max-md:mb-4 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120 bg-[var(--color-projectcardbg)]'
+                        className='border-[var(--color-gray)] border-solid border-[0.5px] rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-2 max-md:m-0 max-md:mb-4 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120 bg-[var(--color-projectcardbg)]'
                     >
 
                         <img className='rounded-2xl w-full h-auto border-[var(--color-darkgray)] border-solid border' src={project.img} alt="" />

@@ -35,12 +35,12 @@
         "tagline": "Solving Invoice Chaos for Small Businesses",
         "problem": "Small businesses waste ~15 hours/week on manual invoicing and struggle with compliance.",
         "highlights": [
-            "Reduces invoice creation time by 70% using AI-powered data extraction",
-            "Prevents compliance errors through automatic E-way bill validation",
+            "Reduces invoice creation time by 60% using AI-powered data extraction",
+            "Reduced inventory processing time by 80% by optimizing product entry and stock updates.",
             "Saves businesses ₹50,000+ annually in accounting costs"
         ],
-        "impact": "Currently serving 200+ businesses, processing 5,000+ invoices monthly",
-        "tech": "Next.js, Supabase, Gemini AI, PostgreSQL",
+        "impact": "Efficiency Increased by 75%",
+        "tech": "Next.js, Supabase, Gemini API, PostgreSQL",
         "role": "Solo Developer",
         "url": "https://hisabkitab1.vercel.app/",
         "icons": [
@@ -63,14 +63,14 @@
         "year": "2nd semester",
         "ss": "/assets/SS/JlugSummerSS2.png",
         "tagline": "Scaling Workshop Registration from 50 to 500+ Students",
-        "problem": "JEC needed to modernize their manual workshop registration process that couldn't handle growing demand.",
+        "problem": "JLUG needed to modernize their manual workshop registration process ",
         "highlights": [
-            "Automated registration workflow, reducing admin time by 80%",
-            "Enabled real-time capacity tracking and instant confirmations",
-            "Collected structured feedback from 500+ participants"
+            "Boosted engagement through a gamified leaderboard system.",
+            "Rewarded participation and assignment completion.",
+            "Enabled real-time performance tracking with instant stats, automated certificates, and structured feedback."
         ],
-        "impact": "Successfully onboarded 500+ students across 20 workshops with zero registration errors",
-        "tech": "React, Next.js, Tailwind CSS, Supabase",
+        "impact": "Successfully onboarded 150+ students across 3 workshops with zero registration errors",
+        "tech": "React, Tailwind CSS, Supabase",
         "role": "Frontend Developer (4-person team)",
         "url": "https://summerschooljlug.netlify.app/",
         "icons": [
@@ -99,7 +99,7 @@
             "Provides multilingual voice support for low-literacy farmers",
             "Delivers real-time weather and market alerts"
         ],
-        "impact": "Tested with 50+ farmers in rural Madhya Pradesh, detecting 15 crop diseases with 87% accuracy",
+        "impact": "",
         "tech": "React Native, Gemini AI, Google Cloud Speech API",
         "contributions": [
             "Designed multilingual voice interface",
@@ -133,14 +133,14 @@
             "Designed mobile-first experience for student accessibility",
             "Integrated event registration and notification system"
         ],
-        "impact": "Increased lab membership applications by 60% and improved project visibility",
-        "tech": "React, CSS, Tailwind CSS",
+        "impact": "Now Students can be updated with the equipement, events and projects.",
+        "tech": "Html, CSS, Tailwind CSS",
         "role": "Lead Designer & Developer",
         "url": "https://iot-robotics-lab-jec.github.io/",
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/ReactIcon.png"
+                "img": "/assets/icons/HtmlIcon.png"
             },
             {
                 "id": 2,

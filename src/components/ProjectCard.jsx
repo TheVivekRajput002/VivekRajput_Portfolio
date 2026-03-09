@@ -12,7 +12,7 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
         <div>
             <div className='mt-6  flex flex-col gap-3 mt-2'>
 
-                <div className='grid grid-cols-[250px_auto] max-md:grid-cols-1 -mb-20 max-md:mb-0 gap-2'>
+                <div className='grid grid-cols-[250px_auto] max-md:grid-cols-1 -mb-14 max-md:mb-0 gap-2'>
 
                     {/* phone  */}
                     <motion.div
@@ -26,9 +26,9 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
                             duration: 0.6,
                             delay: 0.9
                         }}
-                        className='max-md:hidden scale-78 -mt-23 '
+                        className='max-md:hidden scale-78 -mt-23 -mb-5'
                     >
-                        <Phone PhoneWidth={`w-[335px]`} PhoneHeight={`h-[92vh]`} WebUrl={Url} />
+                        <Phone PhoneWidth={`w-[335px]`} PhoneHeight={`h-[96vh]`} WebUrl={Url} />
                     </motion.div>
 
                     <div className='flex gap-2 flex-col'>

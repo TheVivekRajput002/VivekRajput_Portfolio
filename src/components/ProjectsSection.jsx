@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import JlugSummerSS2 from '/assets/SS/JlugSummerSS2.webp'
 import KrishiMitraSS from '/assets/SS/KrishiMitraSS.webp'
 import InvoicePlatformSS from '/assets/SS/InvoicePlatformSS.png'
+import HireButSmarterSS from '/assets/SS/HireButSmarterSS.png'
 import { Link } from 'react-router-dom'
 import IconsFlow from './IconsFlow'
 
@@ -26,30 +27,14 @@ const ProjectsSection = ({ projects }) => {
         };
     }, [isExpanded]);
 
-    const projectData = [
-        {
-            id: 1,
-            img: InvoicePlatformSS,
-            title: "Smart Invoice & E-way bill System",
-            para: "A modern, full-featured business management application built with Next.js for managing customers, invoices, estimates, and inventory.",
+    const imageMap = {
+        "HireButSmarterSS": HireButSmarterSS,
+        "InvoicePlatformSS": InvoicePlatformSS,
+        "JlugSummerSS2": JlugSummerSS2,
+        "KrishiMitraSS": KrishiMitraSS
+    };
 
-            link: "https://hisabkitab1.vercel.app/"
-        },
-        {
-            id: 2,
-            img: JlugSummerSS2,
-            title: "JEC Linux Summer School Website",
-            para: "Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.",
-            link: "https://summerschooljlug.netlify.app/"
-        },
-        {
-            id: 3,
-            img: KrishiMitraSS,
-            title: "Krishi Mitra",
-            para: "Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.",
-            link: "https://thevivekrajput-techportfolio.vercel.app/pagenotfound"
-        }
-    ];
+    const projectData = projects;
 
     return (
 
@@ -79,7 +64,7 @@ const ProjectsSection = ({ projects }) => {
                         className='border-[var(--color-gray)] border-solid border-[0.5px] rounded-3xl p-4 max-md:p-3 pb-6 flex flex-col max-md:pb-5 gap-4 m-2 max-md:m-0 max-md:mb-4 hover:shadow-md hover:scale-101 transition-all ease-in-out duration-120 bg-[var(--color-projectcardbg)]'
                     >
 
-                        <img className='rounded-2xl w-full h-auto border-[var(--color-darkgray)] border-solid border' src={project.img} alt="" />
+                        <img className='rounded-2xl w-full h-auto border-[var(--color-darkgray)] border-solid border' src={imageMap[project.img] || project.img} alt="" />
                         <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                             <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>{project.title}</p>
                             <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px] max-md:text-xs'>{project.para}</p>

@@ -10,63 +10,40 @@
     },
     [
         {
-            "project_img": "/assets/InvoicePlatformSS.png",
-            "project_name": "Smart Invoice & E-way bill System",
-            "project_tagline": "Solving Invoice Chaos for Small Businesses",
-            "project_problem": "Small businesses waste ~15 hours/week on manual invoicing.",
-            "project_highlights": [
-                "Reduces invoice creation time by 70% using AI-powered data extraction",
-                "Prevents compliance errors through automatic E-way bill validation",
-                "Saves businesses ₹50,000+ annually in accounting costs"
-            ],
-            "project_impact": "Currently serving 200+ businesses, processing 5,000+ invoices monthly",
-            "project_tech": "Next.js, Supabase, Gemini AI"
+            "id": 1,
+            "img": "HireButSmarterSS",
+            "title": "Hire But Smarter",
+            "para": "Extracts verified developer skills from GitHub and lets recruiters evaluate candidates via an AI agent — no resume needed.",
+            "link": "https://hire-but-smarter.vercel.app/"
         },
         {
-            "project_img": "/assets/JlugSummerSS2.webp",
-            "project_name": "JEC Linux Summer School Website",
-            "project_tagline": "Scaling Workshop Registration from 50 to 500+ Students",
-            "project_problem": "JEC needed to modernize their manual workshop registration process.",
-            "project_highlights": [
-                "Automated registration workflow, reducing admin time by 80%",
-                "Enabled real-time capacity tracking and instant confirmations",
-                "Collected structured feedback from 500+ participants"
-            ],
-            "project_impact": "Successfully onboarded 500+ students across 20 workshops with zero registration errors",
-            "project_tech": "Next.js, React",
-            "project_role": "Frontend Developer (4-person team)"
+            "id": 2,
+            "img": "InvoicePlatformSS",
+            "title": "Smart Invoice & E-way bill System",
+            "para": "A modern, full-featured business management application built with Next.js for managing customers, invoices, estimates, and inventory.",
+            "link": "https://hisabkitab1.vercel.app/"
         },
         {
-            "project_img": "/assets/KrishiMitraSS.webp",
-            "project_name": "Krishi Mitra",
-            "project_tagline": "Bringing Smart Farming to Rural India",
-            "project_problem": "70% of Indian farmers lack access to timely crop advice, leading to preventable crop failures.",
-            "project_highlights": [
-                "Uses AI image recognition to detect crop diseases within seconds",
-                "Provides multilingual voice support for low-literacy farmers",
-                "Delivers real-time weather and market alerts"
-            ],
-            "project_impact": "Tested with 50+ farmers in rural Madhya Pradesh, detecting 15 crop diseases with 87% accuracy",
-            "project_tech": "React Native, Gemini AI, Google Cloud Speech API",
-            "project_contributions": [
-                "Designed multilingual voice interface",
-                "Built image upload and analysis flow",
-                "Integrated Gemini API for chatbot"
-            ]
+            "id": 3,
+            "img": "JlugSummerSS2",
+            "title": "JEC Linux Summer School Website",
+            "para": "Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.",
+            "link": "https://summerschooljlug.netlify.app/"
+        },
+        {
+            "id": 4,
+            "img": "KrishiMitraSS",
+            "title": "Krishi Mitra",
+            "para": "Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.",
+            "link": "https://thevivekrajput-techportfolio.vercel.app/pagenotfound"
         }
     ],
     [
         {
-            "time_period": "June 2025 - Present",
-            "role": "Technical Member at",
-            "companylogo": "/assets/CosmosLogo.png",
-            "companyname": "Cosmos"
-        },
-        {
-            "time_period": "March 2025 - Present",
-            "role": "Technical Member at",
-            "companylogo": "/assets/JlugLogo.png",
-            "companyname": "JLUG"
+            "time_period": "Dec 2025 - March 2025",
+            "role": "Fullstack Developer Intern",
+            "companylogo": "/assets/SsamLogo.png",
+            "companyname": "SSAM"
         }
     ],
     {

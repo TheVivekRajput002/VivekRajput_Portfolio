@@ -9,10 +9,7 @@ import { Routes, Route } from 'react-router-dom'
 import LocomotiveScroll from 'locomotive-scroll';
 
 
-
-
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>

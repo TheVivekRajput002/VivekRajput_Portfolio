@@ -3,9 +3,12 @@
 export default function InfiniteFlow() {
   const images = [
     { id: 1, src: '/assets/SS/JlugSummerSS2.webp', alt: "Jlug Summer" },
-    { id: 2, src: '/assets/SS/KrishiMitraSS.webp', alt: "Krishi Mitra" },
-    { id: 3, src: '/assets/SS/NoteBlocSS.webp', alt: "Note Bloc" },
-    { id: 4, src: '/assets/SS/TheZenWebsiteSS.webp', alt: "The Zen" },
+    { id: 2, src: '/assets/SS/VoiceScribeSS.png', alt: "Voice Scribe" },
+    { id: 3, src: '/assets/SS/GDPortfolioSS.png', alt: "GD Portfolio" },
+    { id: 4, src: '/assets/SS/KrishiMitraSS.webp', alt: "Krishi Mitra" },
+    { id: 5, src: '/assets/SS/NoteBlocSS.webp', alt: "Note Bloc" },
+    { id: 6, src: '/assets/SS/HireButSmarterSS.png', alt: "HireButSmarter" },
+    { id: 7, src: '/assets/SS/OchiDesignSS.png', alt: "Ochi Design" },
   ];
 
   return (

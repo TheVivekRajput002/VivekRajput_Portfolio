@@ -12,6 +12,7 @@
         ],
         "impact": "Successfully landing interviews and freelance opportunities",
         "tech": "React, Tailwind CSS, Framer Motion",
+        "github": "https://github.com/TheVivekRajput002/VivekRajput_Portfolio",
         "url": "https://thevivekrajput-techportfolio.vercel.app",
         "icons": [
             {
@@ -25,6 +26,40 @@
             {
                 "id": 3,
                 "img": "/assets/icons/FramermotionIcon.png"
+            }
+        ]
+    },
+    {
+        "head": "Hire But Smarter",
+        "year": "2026",
+        "ss": "/assets/SS/HireButSmarterSS.png",
+        "tagline": "Talent Intelligence system for the post-resume era",
+        "problem": "Recruiters can't verify developer skills from resumes alone — no proof of real project complexity or actual coding ability.",
+        "highlights": [
+            "Extracts verified skills and computes explainable Potential Score from public GitHub",
+            "AI Hiring Agent answers recruiter questions grounded in real repo data with citations",
+            "Side-by-side candidate comparison with JD match scoring and PDF portfolio export"
+        ],
+        "impact": "Built for IIT Kanpur Techkriti '26 × Eightfold AI Hackathon — Won 2nd Prize",
+        "tech": "Next.js, Supabase, Gemini AI, D3.js, Tailwind CSS",
+        "github": "https://github.com/TheVivekRajput002/HireButSmarter",
+        "url": "https://hire-but-smarter.vercel.app",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/icons/NextjsIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/icons/SupabaseIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/icons/GeminiIcon.png"
+            },
+            {
+                "id": 4,
+                "img": "/assets/icons/TailwindcssIcon.png"
             }
         ]
     },
@@ -55,6 +90,37 @@
             {
                 "id": 3,
                 "img": "/assets/icons/SupabaseIcon.png"
+            }
+        ]
+    },
+    {
+        "head": "OCHI Design",
+        "year": "3rd semester",
+        "ss": "/assets/SS/OchiDesignSS.png",
+        "tagline": "Modern Animated Website with Smooth Scroll Effects",
+        "problem": "Most portfolio or agency websites lack fluid, high-performance animations — resulting in clunky user experiences that fail to leave a lasting impression.",
+        "highlights": [
+            "GSAP-powered animations for fluid and interactive UI elements",
+            "Locomotive Scroll integration for silky smooth scrolling effects",
+            "Interactive cursor-following eyes component with real-time animations"
+        ],
+        "impact": "",
+        "tech": "React 19, Vite 7, Tailwind CSS 4, GSAP 3, Locomotive Scroll 5",
+        "contributions": [
+            "Built interactive Eyes component with cursor-tracking animations",
+            "Integrated GSAP and Locomotive Scroll for smooth page transitions",
+            "Architected component structure across Navbar, Marquee, About, and Footer"
+        ],
+        "github": "https://github.com/TheVivekRajput002/OCHI-Design---Animated-Website",
+        "url": "https://ochi-design-animated-website.vercel.app/",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/icons/ReactIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/icons/TailwindcssIcon.png"
             }
         ]
     },
@@ -123,6 +189,41 @@
         ]
     },
     {
+        "head": "VoiceScribe",
+        "year": "4th semester",
+        "ss": "/assets/SS/VoiceScribeSS.png",
+        "tagline": "Live Speech Transcription in Your Browser",
+        "problem": "Most transcription tools require accounts, APIs, or internet connectivity — creating friction for users who just need to convert speech to text quickly.",
+        "highlights": [
+            "Real-time transcription with interim word display using Web Speech API",
+            "Continuous mode with auto-restart to bypass Chrome's session timeout",
+            "Supports 11 languages including Hindi, Arabic, and Japanese"
+        ],
+        "impact": "",
+        "tech": "HTML, CSS, Vanilla JS, Web Speech API",
+        "contributions": [
+            "Built continuous mode with exponential backoff restart logic",
+            "Designed waveform visualizer using pure CSS animations",
+            "Implemented lost-word recovery by committing interim text on session end"
+        ],
+        "github": "https://github.com/TheVivekRajput002/VoiceScribe",
+        "url": "https://voice-scribe-lake.vercel.app",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/icons/HtmlIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/icons/CssIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/icons/JavascriptIcon.png"
+            }
+        ]
+    },
+    {
         "head": "JEC Robotics Lab Official Website",
         "year": "2nd semester",
         "ss": "/assets/SS/RoboticsLabSS2.png",
@@ -136,6 +237,7 @@
         "impact": "Now Students can be updated with the equipement, events and projects.",
         "tech": "Html, CSS, Tailwind CSS",
         "role": "Lead Designer & Developer",
+        "github": "https://github.com/iot-robotics-lab-jec/iot-robotics-lab-jec.github.io",
         "url": "https://iot-robotics-lab-jec.github.io/",
         "icons": [
             {

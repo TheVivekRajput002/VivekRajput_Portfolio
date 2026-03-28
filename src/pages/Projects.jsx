@@ -25,6 +25,7 @@ const Projects = () => {
             Url={project.url}
             icons={project.icons}
             year={project.year}
+            github={project.github}
           />
         ))
       }

@@ -5,8 +5,9 @@ import Phone from './Phone'
 import isDark from '../components/Navbar'
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
+import { Github } from "lucide-react"
 
-const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech, role, contributions, icons, year }) => {
+const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech, role, contributions, icons, year, github }) => {
 
     return (
         <div>
@@ -54,9 +55,16 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
                             <p className='mt-1 font-[400] text-[var(--color-sidetext)] text-xs max-md:text-xs'>
                                 {year}
                             </p>
-                            <button className='bg-[var(--color-lightgray)] mt-4 text-[var(--color-maintext)] rounded-2xl px-6 py-3 font-[500] text-sm max-md:text-sm hover:shadow-md hover:scale-102 transition-all border border-[var(--color-gray)]'>
-                                <Link to={Url} target="_blank" >View Project &gt;</Link>
-                            </button>
+                            <div className='flex items-center gap-3 mt-4'>
+                                <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 font-[500] text-sm max-md:text-sm hover:shadow-md hover:scale-102 transition-all border border-[var(--color-gray)]'>
+                                    <Link to={Url} target="_blank" >View Project &gt;</Link>
+                                </button>
+                                {github && (
+                                    <Link to={github} target="_blank" className="hover:scale-110 transition-all text-[var(--color-maintext)] relative top-[2px]">
+                                        <Github height={18} stroke='var(--color-maintext)' strokeWidth={1.5} />
+                                    </Link>
+                                )}
+                            </div>
                         </motion.div>
 
                         {/* Screenshot */}

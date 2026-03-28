@@ -125,6 +125,41 @@
         ]
     },
     {
+        "head": "FuturEstate AI",
+        "year": "3rd semester",
+        "ss": "/assets/SS/FuturEstateAiSS.png",
+        "tagline": "AI-Powered Real Estate Intelligence Platform",
+        "problem": "Real estate buyers and investors lack access to instant, data-driven property valuations and market insights — leading to uninformed decisions and missed opportunities.",
+        "highlights": [
+            "Dual AI models — Gemini 2.5 Flash for background valuations and Groq Llama 3.3 70B for conversational property discovery",
+            "Real-time UI updates via Supabase Realtime when background AI tasks complete",
+            "Offer risk assessment scoring buyers on financial viability, credibility, and market conditions"
+        ],
+        "impact": "",
+        "tech": "Next.js 15, Supabase, Trigger.dev, Gemini 2.5 Flash, Groq Llama 3.3 70B, Vercel AI SDK",
+        "contributions": [
+            "Built conversational AI agent with MCP-style tool calling for property search and market analysis",
+            "Integrated Trigger.dev background jobs for heavy AI workloads without blocking the UI",
+            "Designed offer management flow with AI-generated risk scores and real-time notifications"
+        ],
+        "github": "https://github.com/siddhant385/codehunt",
+        "url": "https://codekumbh.vercel.app/",
+        "icons": [
+            {
+                "id": 1,
+                "img": "/assets/icons/NextjsIcon.png"
+            },
+            {
+                "id": 2,
+                "img": "/assets/icons/SupabaseIcon.png"
+            },
+            {
+                "id": 3,
+                "img": "/assets/icons/TailwindcssIcon.png"
+            }
+        ]
+    },
+    {
         "head": "JEC Linux Summer School Website",
         "year": "2nd semester",
         "ss": "/assets/SS/JlugSummerSS2.png",

@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Instagram, Mail, Earth, X, Linkedin, Github } from 'lucide-react'
 
-const Footer = ({ footer }) => {
+const Footer = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-50px" });
 
@@ -13,7 +13,7 @@ const Footer = ({ footer }) => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
         >
-            <p className='text-center text-md max-md:text-sm font-[400] text-[var(--color-maintext)] opacity-50 mb-6'>{footer.copyright_message}</p>
+            <p className='text-center text-md max-md:text-sm font-[400] text-[var(--color-maintext)] opacity-50 mb-6'>Copyright © 2025 TheVivekRajput002. All rights reserved.</p>
 
             <motion.div
                 initial={{ opacity: 0 }}

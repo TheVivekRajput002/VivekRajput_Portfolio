@@ -66,7 +66,7 @@ const Home = () => {
                 <GetInTouch conclusion={HomeData[4]} />
 
                 <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[4vh]'>
-                    <Footer footer={HomeData[5]} />
+                    <Footer />
                 </div>
 
 

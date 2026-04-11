@@ -5,6 +5,31 @@ export const mdxComponents = {
     p: (props) => <p className="text-md leading-[1.8] font-light text-[var(--color-maintext)] mb-6" {...props} />,
     hr: (props) => <hr className="my-8 border-[var(--color-darkgray)]" {...props} />,
     blockquote: (props) => <blockquote className="border-l-2 border-gray-300 pl-6 italic text-lg leading-tight text-gray-900" {...props} />,
+    pre: ({ className = "", ...props }) => (
+        <pre
+            className={`my-8 overflow-x-auto rounded-xl border border-[var(--color-darkgray)] bg-[#1f2430] p-5 shadow-sm ${className}`}
+            {...props}
+        />
+    ),
+    code: ({ className = "", ...props }) => {
+        const isBlockCode = className.includes("language-") || Boolean(props["data-language"])
+
+        if (isBlockCode) {
+            return (
+                <code
+                    className={`${className} block font-mono text-[0.93rem] leading-7`}
+                    {...props}
+                />
+            )
+        }
+
+        return (
+            <code
+                className="rounded bg-[var(--color-lightgray)] px-1.5 py-0.5 font-mono text-[0.9em] text-[var(--color-maintext)]"
+                {...props}
+            />
+        )
+    },
 }
 
 export default function ArticleLayout({ frontmatter, children }) {

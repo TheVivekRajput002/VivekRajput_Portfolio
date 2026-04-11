@@ -1,7 +1,7 @@
-import { AlertCircleIcon, BadgeCheckIcon, CheckIcon } from "lucide-react"
-import { Badge } from "./ui/badge"
+import { BadgeCheckIcon } from "lucide-react"
+import { Badge } from "../ui/badge"
 import { motion } from "motion/react"
-import techStackData from "../data/TechStackData.json"
+import techStackData from "../../data/TechStackData"
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -50,7 +50,12 @@ export default function TechSection() {
                         </Badge></MotionBadgeWrap>
                         {
                             techStack.stack.map(stack => (
-                                <MotionBadgeWrap><Badge variant="outline">{stack}</Badge></MotionBadgeWrap>
+                                <MotionBadgeWrap key={`${techStack.id}-${stack.name}`}>
+                                    <Badge variant="outline" className="gap-1.5">
+                                        {stack.icon && <stack.icon className="inline-block" />}
+                                        {stack.name}
+                                    </Badge>
+                                </MotionBadgeWrap>
                             ))
                         }
                     </motion.div>

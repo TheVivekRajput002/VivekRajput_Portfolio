@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import BlogCard from '../components/BlogCard'
+import BlogCard from '../components/blogs/BlogCard'
 import Footer from '../components/Footer'
 import BlogsData from '../data/BlogsData.json'
 import { motion, useInView } from 'framer-motion'
@@ -19,7 +19,7 @@ function Blogs() {
                     transition={{ duration: 0.6 }}
                     className=' font-[800] text-[var(--color-maintext)] text-5xl max-md:text-2xl mt-8 max-md:mt-[8vh] mb-10 max-md:mb-[6vh] text-center'
                 >
-                    Here's are the <br />Blogs.
+                    Blogs.
                 </motion.h2>
 
                 <div className='flex flex-col gap-10 mt-14'>

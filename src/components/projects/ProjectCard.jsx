@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Phone from './Phone'
-import isDark from '../components/Navbar'
+import isDark from '../Navbar'
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
 import { Github } from "lucide-react"

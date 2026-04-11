@@ -1,16 +1,14 @@
 
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { motion } from 'motion/react';
-import HeroSection from '../components/HeroSection';
-import GetInTouch from '../components/GetInTouch';
-import InfiniteFlow from '../components/InfiniteFlow';
-import IconsFlow from '../components/IconsFlow';
-import About from '../components/About';
-import ProjectsSection from '../components/ProjectsSection';
+import HeroSection from '../components/home/HeroSection';
+import GetInTouch from '../components/home/GetInTouch';
+import InfiniteFlow from '../components/home/InfiniteFlow';
+import About from '../components/home/About';
+import ProjectsSection from '../components/home/ProjectsSection';
 import HomeData from '../data/HomeData.json'
-import WorkExperience from '../components/WorkExperience';
-import TechStackSection from '../components/TechStackSection';
+import WorkExperience from '../components/home/WorkExperience';
+import TechStackSection from '../components/home/TechStackSection';
 
 
 const Home = () => {

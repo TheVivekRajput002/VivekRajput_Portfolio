@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import ProjectCard from '../components/ProjectCard'
+import ProjectCard from '../components/projects/ProjectCard'
 import ProjectsData from '../data/ProjectsData.json'
 
 

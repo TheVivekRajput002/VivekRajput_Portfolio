@@ -23,8 +23,6 @@ body {
 :root {
   /* ===== IMPROVED COLOR PALETTE ===== */
 
-
-
   /* Main Backgrounds */
   /* --color-bg: light-dark(hsl(220 20% 97%), hsl(220 25% 6%)); */
   --color-bg: light-dark(hsl(0 0% 100%), hsl(220 25% 6%));
@@ -32,8 +30,8 @@ body {
   --color-innerbg: light-dark(hsl(220 20% 100%), hsl(220 20% 10%));
 
   /* Surface Colors */
-  --color-lightgray: light-dark(hsl(220 15% 90%), hsl(220 15% 15% / 0.85));
-  --color-projectcardbg: light-dark(hsl(220 20% 96% / 0.6), hsl(220 18% 12%));
+  --color-lightgray: light-dark(hsl(225, 22%, 96%), hsl(220 15% 15% / 0.85));
+  --color-projectcardbg: light-dark(hsla(225, 20%, 98%, 0.365), hsl(220 18% 12%));
 
   /* Navigation */
   --color-navbg: light-dark(hsl(220 30% 100% / 55%), hsl(220 25% 14% / 65%));

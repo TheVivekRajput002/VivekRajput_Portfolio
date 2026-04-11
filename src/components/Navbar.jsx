@@ -47,7 +47,7 @@ export default function Navbar() {
           delay: 1.4,
           duration: 0.8
         }}
-        className="max-md:hidden fixed top-7 z-100 left-1/2 -translate-x-1/2 flex items-center gap-4 px-2.5 py-1 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-17">
+        className="max-md:hidden fixed top-7 z-100 left-1/2 -translate-x-1/2 flex items-center gap-4 px-3 py-1.5 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-17">
 
         {/* Home */}
         <Link to="/" className="-mr-2 relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
@@ -57,11 +57,12 @@ export default function Navbar() {
 
         <div className="border-l-1 border-solid border-[var(--color-darkgray)] h-6 mx-1" > </div>
 
-        {/* Blogs */}
-        <Link to="/blogs" className="-mr-2 relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
-          <NotepadText strokeWidth={strokeWidth} color='var(--color-maintext)' size={20} />
-          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Blogs</span>
-        </Link>
+
+            {/* Linkedin */}
+        {/* <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+          <Linkedin stroke='var(--color-maintext)' strokeWidth={strokeWidth} size={20} />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">LinkedIn</span>
+        </a> */}
 
 
         {/* projects */}
@@ -77,6 +78,12 @@ export default function Navbar() {
         <Link to="https://drive.google.com/drive/folders/1uHIPEDG3dbhgkYVedqrApzGmxoRXrAqu?usp=sharing" target="_blank" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <FileText strokeWidth={strokeWidth} size={20} color='var(--color-maintext)' />
           <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Resume</span>
+        </Link>
+        
+        {/* Blogs */}
+        <Link to="/blogs" className=" relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+          <NotepadText strokeWidth={strokeWidth} color='var(--color-maintext)' size={20} />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Blogs</span>
         </Link>
 
         <div className="border-l-1 border-solid border-[var(--color-darkgray)] h-6 " > </div>

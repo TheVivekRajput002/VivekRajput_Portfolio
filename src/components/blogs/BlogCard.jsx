@@ -3,21 +3,21 @@
 export default function BlogCard({ title, description }) {
     return (
         <div className="flex items-center justify-center ">
-            <article className="bg-[var(--color-projectcardbg)] rounded-[42px] p-6 max-w-[510px] w-full shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)]">
+            <article className="bg-[var(--color-projectcardbg)] border-[0.5px] border-[var(--color-darkgray)] rounded-[42px] p-6 max-w-[510px] w-full shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)]">
 
                 <div className="mx-1 mt-1">
 
                     {/* Header Tags */}
                     <div className="flex justify-between items-center mb-5">
-                        <div className="bg-[#2a2a2a] text-[var(--color-maintext)] py-1 px-3 rounded-full">
+                        <div className="bg-[var(--color-lightgray)] text-[var(--color-maintext)] py-1 px-3 rounded-full shadow-sm">
                             <span className="text-[9px] align-middle font-medium tracking-tight">Lush and green</span>
                         </div>
-                        <div className="flex items-center bg-[#2a2a2a] rounded-full p-[2px] shadow-sm">
+                        <div className="flex items-center bg-[var(--color-lightgray)] rounded-full p-[2px] shadow-sm">
                             <div className="px-2 py-0.5 text-center">
                                 <span className="align-middle text-[8px] uppercase tracking-widest font-bold text-[var(--color-maintext)]">JAN</span>
                             </div>
-                            <div className="bg-white px-2 py-0.5 text-center rounded-full">
-                                <span className="align-middle text-[9px] font-bold text-zinc-900">25</span>
+                            <div className="bg-[var(--color-maintext)] px-2 py-0.5 text-center rounded-full">
+                                <span className="align-middle text-[9px] font-bold text-[var(--color-lightgray)]">25</span>
                             </div>
                         </div>
                     </div>

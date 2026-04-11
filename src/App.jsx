@@ -12,7 +12,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 
 function App() {
-
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <>
 
@@ -22,8 +22,6 @@ function App() {
           backgroundImage:
             "linear-gradient(to right, var(--color-infiniteimgbg) 1px, transparent 0.5px), linear-gradient(to bottom, var(--color-infiniteimgbg) 1px, transparent 0.5px)",
           backgroundSize: "40px 40px",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "top left",
         }}
       >
 

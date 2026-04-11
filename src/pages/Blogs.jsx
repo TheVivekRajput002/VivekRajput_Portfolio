@@ -25,7 +25,7 @@ function Blogs() {
 
                     {
                         BlogsData.map(blog => (
-                            <BlogCard key={blog.id} title={blog.title} description={blog.description} id={blog.id} tag={blog.tag} date={blog.date} img_url={blog.img_url} />
+                            <BlogCard key={blog.id} title={blog.title} description={blog.description} id={blog.id} category={blog.category} date={blog.date} img_url={blog.img_url} />
                         ))
                     }
                 </div>

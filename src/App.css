@@ -42,7 +42,8 @@ body {
 
   /* Text */
   --color-maintext: light-dark(hsl(220 18% 8%), hsl(220 15% 96%));
-  --color-sidetext: light-dark(hsl(220 12% 35%), hsl(220 10% 68%));
+  --color-p2text: light-dark(hsl(220 12% 35%), hsl(220 10% 68%));
+  --color-p3text: light-dark(hsl(217.9, 10.6%, 64.9%), hsl(212.7, 16.7%, 83.9%));
 
   /* Special Elements */
   --color-infiniteimgbg: light-dark(hsl(220 20% 93% / 0.4), hsl(220 15% 50% / 0.1));

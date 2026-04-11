@@ -67,7 +67,7 @@ const ProjectsSection = ({ projects }) => {
                         <img className='rounded-2xl w-full h-auto border-[var(--color-darkgray)] border-solid border' src={imageMap[project.img] || project.img} alt="" />
                         <div className='flex flex-col gap-5 mx-auto w-[90%]'>
                             <p className='font-[600] text-[var(--color-maintext)] text-2xl max-md:text-xl'>{project.title}</p>
-                            <p className=' text-sm text-[var(--color-sidetext)] mt-[-10px] max-md:text-xs'>{project.para}</p>
+                            <p className=' text-sm text-[var(--color-p2text)] mt-[-10px] max-md:text-xs'>{project.para}</p>
                             <span>
                                 <button className='bg-[var(--color-lightgray)] text-[var(--color-maintext)] rounded-2xl px-6 py-3 h-full font-[500] text-md max-md:text-sm border-[var(--color-gray)] border-[0.2px] hover:shadow-lg hover:scale-101 transition-all ease-in-out duration-120'>
                                     <a href={project.link} target="_blank">View Project &gt;</a>

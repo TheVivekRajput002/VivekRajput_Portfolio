@@ -25,17 +25,13 @@ export default function NordenArticle() {
 
     return (
         <div
-            className="min-h-screen py-24 px-4"
+            className="min-h-screen py-10 px-4 bg-[var(--color-innerbg)]"
             style={{
                 fontFamily: "'Manrope', sans-serif",
-                backgroundColor: "#fcfcfc",
-                backgroundImage:
-                    "linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px)",
-                backgroundSize: "40px 40px",
             }}
         >
             {/* Main column */}
-            <main className="relative max-w-[55%] mx-auto bg-white min-h-screen border-x border-gray-200 shadow-[0_0_50px_rgba(0,0,0,0.02)] px-16 py-24 flex flex-col gap-24">
+            <main className="relative min-h-screen flex flex-col gap-24">
                 {/* Corner crosshair marks */}
                 <span
                     className="absolute font-mono text-sm text-gray-300 select-none pointer-events-none"

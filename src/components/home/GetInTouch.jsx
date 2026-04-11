@@ -51,7 +51,7 @@ const GetInTouch = ({ conclusion }) => {
                 transition={{ duration: 0.7 }}
             >
                 <h2 className='font-[500] text-[var(--color-maintext)] text-3xl max-md:text-2xl mb-4 mt-9 '>Get in touch</h2>
-                <p className='text-[var(--color-sidetext)] text-md max-md:text-sm mt-[15px] mb-10 '>{conclusion.para}</p>
+                <p className='text-[var(--color-p2text)] text-md max-md:text-sm mt-[15px] mb-10 '>{conclusion.para}</p>
 
                 <motion.form
                     initial={{ opacity: 0, y: 30 }}

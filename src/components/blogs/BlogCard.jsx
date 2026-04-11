@@ -1,6 +1,6 @@
 
 
-export default function BlogCard({ id, title, description, tag, date, img_url }) {
+export default function BlogCard({ id, title, description, category, date, img_url }) {
     return (
         <div className="flex items-center justify-center ">
             <article className="bg-[var(--color-projectcardbg)] border-[0.5px] border-[var(--color-darkgray)] rounded-[42px] p-6 max-w-[510px] w-full shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)]">
@@ -10,7 +10,7 @@ export default function BlogCard({ id, title, description, tag, date, img_url })
                     {/* Header Tags */}
                     <div className="flex justify-between items-center mb-5">
                         <div className="bg-[var(--color-lightgray)] text-[var(--color-maintext)] py-1 px-3 rounded-full shadow-sm">
-                            <span className="text-[9px] align-middle font-medium tracking-tight">{tag}</span>
+                            <span className="text-[9px] align-middle font-medium tracking-tight">{category}</span>
                         </div>
                         <div className="flex items-center bg-[var(--color-lightgray)] rounded-full p-[2px] shadow-sm">
                             <div className="px-2 py-0.5 text-center">

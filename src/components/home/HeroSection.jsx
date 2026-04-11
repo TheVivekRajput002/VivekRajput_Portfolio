@@ -76,7 +76,7 @@ const HeroSection = ({ Name, Role, Description }) => {
                         ease: "easeOut",
                         delay: 2
                     }}
-                    className='text-[var(--color-sidetext)] text-md max-lg:text-sm mt-4 max-md:mt-2 mb-7 leading-relaxed poppins'>
+                    className='text-[var(--color-p2text)] text-md max-lg:text-sm mt-4 max-md:mt-2 mb-7 leading-relaxed poppins'>
                     {Description}
                 </motion.p>
 

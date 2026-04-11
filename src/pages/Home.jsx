@@ -1,5 +1,4 @@
 
-import Footer from '../components/Footer'
 import { motion } from 'motion/react';
 import HeroSection from '../components/home/HeroSection';
 import GetInTouch from '../components/home/GetInTouch';
@@ -13,7 +12,7 @@ import TechStackSection from '../components/home/TechStackSection';
 
 const Home = () => {
     return (
-        < div className='mx-[14%] max-md:pt-[24%] max-md:mx-[5%] pb-90' data-scroll-section>
+        < div className='mx-17 max-md:pt-[24%] max-md:mx-[5%] pb-90' data-scroll-section>
             {/* 
             <div className='bg-[var(--color-innerbg)] text-[var(--color-maintext)] max-md:pt-[7vh] pt-45 border-t-0 border-b-0 pb-25 max-md:pb-15 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[9%] pl-[9%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-hidden'>
             </div> */}
@@ -61,12 +60,6 @@ const Home = () => {
                 {/* section : testimonials - skipped  */}
 
                 <GetInTouch conclusion={HomeData[4]} />
-
-                <div className='max-md:pt-[10vh] pt-30 pb-10 max-md:pb-[4vh]'>
-                    <Footer />
-                </div>
-
-
 
             </div>
 

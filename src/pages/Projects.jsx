@@ -7,7 +7,7 @@ import ProjectsData from '../data/ProjectsData.json'
 
 const Projects = () => {
   return (
-    <div className='mx-6 mt-3'>
+    <div className=' mt-3'>
 
       {
         ProjectsData.map((project, index) => (

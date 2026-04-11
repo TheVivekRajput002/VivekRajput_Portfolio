@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import BlogCard from '../components/blogs/BlogCard'
-import Footer from '../components/Footer'
 import BlogsData from '../data/BlogsData.json'
 import { motion, useInView } from 'framer-motion'
 
@@ -26,13 +25,9 @@ function Blogs() {
 
                     {
                         BlogsData.map(blog => (
-                            <BlogCard key={blog.id} title={blog.title} description={blog.description} />
+                            <BlogCard key={blog.id} title={blog.title} description={blog.description} id={blog.id} tag={blog.tag} date={blog.date} img_url={blog.img_url} />
                         ))
                     }
-                </div>
-
-                <div className='max-md:pt-[10vh] pt-20 pb-10 max-md:pb-[4vh]'>
-                    <Footer />
                 </div>
 
             </div>

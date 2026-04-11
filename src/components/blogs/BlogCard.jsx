@@ -1,6 +1,6 @@
 
 
-export default function BlogCard({ title, description }) {
+export default function BlogCard({ id, title, description, tag, date, img_url }) {
     return (
         <div className="flex items-center justify-center ">
             <article className="bg-[var(--color-projectcardbg)] border-[0.5px] border-[var(--color-darkgray)] rounded-[42px] p-6 max-w-[510px] w-full shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)]">
@@ -10,14 +10,19 @@ export default function BlogCard({ title, description }) {
                     {/* Header Tags */}
                     <div className="flex justify-between items-center mb-5">
                         <div className="bg-[var(--color-lightgray)] text-[var(--color-maintext)] py-1 px-3 rounded-full shadow-sm">
-                            <span className="text-[9px] align-middle font-medium tracking-tight">Lush and green</span>
+                            <span className="text-[9px] align-middle font-medium tracking-tight">{tag}</span>
                         </div>
                         <div className="flex items-center bg-[var(--color-lightgray)] rounded-full p-[2px] shadow-sm">
                             <div className="px-2 py-0.5 text-center">
-                                <span className="align-middle text-[8px] uppercase tracking-widest font-bold text-[var(--color-maintext)]">JAN</span>
+                                <span className="align-middle text-[8px] uppercase tracking-widest font-bold text-[var(--color-maintext)]">
+                                    {date.split("-")[0]}
+                                </span>
                             </div>
+
                             <div className="bg-[var(--color-maintext)] px-2 py-0.5 text-center rounded-full">
-                                <span className="align-middle text-[9px] font-bold text-[var(--color-lightgray)]">25</span>
+                                <span className="align-middle text-[9px] font-bold text-[var(--color-lightgray)]">
+                                    {date.split("-")[1]}
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -36,7 +41,7 @@ export default function BlogCard({ title, description }) {
                 {/* Hero Image */}
                 <div className="relative rounded-3xl overflow-hidden aspect-[0.6/0.3] group">
                     <img
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe7L7ShMG9RmYrUeYxn29u_itaqGCGnqzgNWGVab65f9Ayc-6B1vM9eK9VMfylIRywzwqSpcvmHWUYimjUD5glItHKfOUJ-kcxI81ZaBM9AA15HsvrpwpdkZ0nkvKqeaAA7QuTzJTDi9c0j5ITslht4KVaal8dJpXKJt2g6MfbpVauzCLOZdnJYmRHKRTpmM1Xwk5bnvZ4UBGLNxtl81uk6O1ySDjEHaxXyIzzZMhvAzMwX0Tq_8UhxY4AVHRhi3mbIBbddht0hanq"
+                        src={img_url}
                         alt="Lush green mountains under morning mist"
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     />

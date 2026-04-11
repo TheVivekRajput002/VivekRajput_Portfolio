@@ -19,12 +19,11 @@ function App() {
       < div
         className='bg-[var(--color-bg)] '
         style={{
-          // fontFamily: "'Manrope', sans-serif",
-          // backgroundColor: "#fcfcfc",
-          // backgroundImage:
-          // "linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px)",
-          // backgroundSize: "40px 40px",
-        }}>
+          backgroundImage:
+            "linear-gradient(to right, var(--color-infiniteimgbg) 1px, transparent 0.5px), linear-gradient(to bottom, var(--color-infiniteimgbg) 1px, transparent 0.5px)",
+          backgroundSize: "40px 40px",
+        }}
+      >
 
         <div className="bg-[var(--color-innerbg)] pt-[9%] min-h-screen border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[3%] pl-[3%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-x-hidden flex flex-col" >
 
@@ -39,9 +38,7 @@ function App() {
             </Routes>
           </main>
 
-       
-            <Footer />
-          
+          <Footer />
 
         </div>
       </div>

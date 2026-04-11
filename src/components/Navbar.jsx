@@ -1,31 +1,9 @@
 
 import { motion } from 'motion/react';
 import { House, Instagram, FileText, Sun, Moon, Folders, Linkedin, NotepadText } from 'lucide-react'
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Navbar() {
-
-  const [isDark, setIsDark] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setIsDark(prefersDark);
-
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e) => setIsDark(e.matches);
-
-    mediaQuery.addEventListener('change', handleChange);
-    setMounted(true);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
-  }, [isDark]);
-
-  if (!mounted) return null;
+export default function Navbar({ isDark, onToggleTheme }) {
 
   const strokeWidth = 1.2
 
@@ -90,7 +68,7 @@ export default function Navbar() {
 
         {/* Dark Light Mode */}
         <button
-          onClick={() => setIsDark(!isDark)}
+          onClick={onToggleTheme}
           className={`relative rounded-full flex items-center align-middle justify-center transition-all duration-300 px-3 transform `}
           aria-label="Toggle theme"
         >
@@ -154,7 +132,7 @@ export default function Navbar() {
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
 
         <button
-          onClick={() => setIsDark(!isDark)}
+          onClick={onToggleTheme}
           className={`relative rounded-full flex items-center justify-center transition-all duration-300 px-3 transform `}
           aria-label="Toggle theme"
         >
@@ -229,7 +207,7 @@ export default function Navbar() {
         <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
 
         <button
-          onClick={() => setIsDark(!isDark)}
+          onClick={onToggleTheme}
           className={`relative rounded-full flex items-center justify-center transition-all duration-300 px-3 transform `}
           aria-label="Toggle theme"
         >

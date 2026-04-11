@@ -1,5 +1,5 @@
 
-
+import { useCallback, useEffect, useState } from 'react'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Blogs from './pages/Blogs'
@@ -9,10 +9,44 @@ import Navbar from '../src/components/Navbar'
 import Footer from '../src/components/Footer'
 import { Routes, Route } from 'react-router-dom'
 import LocomotiveScroll from 'locomotive-scroll';
+import ThemeToggle from './components/ThemeToggle'
+import { FaReact, RiTailwindCssFill, SiFramer } from "react-icons/fa";
 
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    const locomotiveScroll = new LocomotiveScroll()
+    return () => {
+      if (typeof locomotiveScroll.destroy === 'function') {
+        locomotiveScroll.destroy()
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      setIsDark(savedTheme === 'dark')
+      return
+    }
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    setIsDark(prefersDark)
+  }, [])
+
+  useEffect(() => {
+    const themeName = isDark ? 'dark' : 'light'
+    document.documentElement.style.colorScheme = themeName
+    document.documentElement.classList.toggle('dark', isDark)
+    localStorage.setItem('theme', themeName)
+  }, [isDark])
+
+  const toggleTheme = useCallback(() => {
+    setIsDark((prev) => !prev)
+  }, [])
+
   return (
     <>
 
@@ -29,14 +63,15 @@ function App() {
 
         <div className="bg-[var(--color-innerbg)] pt-[9%] min-h-screen border-t-0 border-b-0 max-md:w-[95%] max-xl:w-[80%] w-[55%] pr-[3%] pl-[3%] max-md:pt-[1%] m-auto border-[1.5px] border-r-[var(--color-lightgray)] border-l-[var(--color-lightgray)] overflow-x-hidden flex flex-col" >
 
-          <Navbar />
+          <Navbar isDark={isDark} onToggleTheme={toggleTheme} />
+          <ThemeToggle isDark={isDark} onToggleTheme={toggleTheme} />
 
           <main className='flex-1'>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/projects' element={<Projects />} />
-              <Route path='/blogs' element={<Blog />} />
-              <Route path='/blogs/:id' element={<Blogs />} />
+              <Route path='/blogs' element={<Blogs />} />
+              <Route path='/blog/:slug' element={<Blog />} />
               <Route path='/pagenotfound' element={<NotFound />} />
             </Routes>
           </main>

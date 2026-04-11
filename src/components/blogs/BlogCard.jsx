@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 export default function BlogCard({ id, title, description, category, date, img_url }) {
     return (
@@ -29,9 +29,11 @@ export default function BlogCard({ id, title, description, category, date, img_u
 
                     {/* Typography */}
                     <div className="space-y-2 mb-6 mx-1">
-                        <h1 className="text-[25px] font-medium text-[var(--color-maintext)] tracking-tight leading-[1.1]">
-                            {title}
-                        </h1>
+                       
+                            <h1 className="text-[25px] font-medium text-[var(--color-maintext)] tracking-tight leading-[1.1]">
+                                {title}
+                            </h1>
+                        
                         <p className="text-gray-400 text-[13px] leading-relaxed">
                             {description}
                         </p>
@@ -43,10 +45,10 @@ export default function BlogCard({ id, title, description, category, date, img_u
                     <img
                         src={img_url}
                         alt="Lush green mountains under morning mist"
-                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        className="w-full h-full object-cover"
                     />
                     {/* Location Overlay */}
-                    <div className="absolute bottom-10 left-10 flex flex-col gap-0.5">
+                    {/* <div className="absolute bottom-10 left-10 flex flex-col gap-0.5">
                         <div className="flex items-center gap-2 text-white/90">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" strokeWidth="1.5"
@@ -59,7 +61,7 @@ export default function BlogCard({ id, title, description, category, date, img_u
                         <span className="text-[17px] font-medium tracking-tight text-white/90 ml-7">
                             Virginia, USA
                         </span>
-                    </div>
+                    </div> */}
                 </div>
 
             </article>

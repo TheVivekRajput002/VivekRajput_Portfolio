@@ -37,8 +37,15 @@ export default function ArticleLayout({ frontmatter, children }) {
         title, description, volume, label,
         image, imageCaption, imageSubCaption, imageReference,
         authorName, authorRole, authorBio, authorImage,
-        meta, cards
+        meta, toc
     } = frontmatter
+
+    const authorImageSrc = authorImage?.startsWith('./')
+        ? authorImage.replace('./', '/')
+        : authorImage
+
+    const tableOfContents = Array.isArray(toc) ? toc : []
+    const getTocHref = (id = '') => (id.startsWith('#') ? id : `#${id}`)
 
     return (
         <div className="min-h-screen py-6 px-4 bg-[var(--color-innerbg)]"
@@ -118,50 +125,35 @@ export default function ArticleLayout({ frontmatter, children }) {
                     </div>
                 </section>
 
-{/* index  */}
-                <nav class="grid grid-cols-12 gap-8 border-y border-gray-200 py-12 my-2">
+                {/*table of contents, index */}
+                {tableOfContents.length > 0 && (
+                    <nav className="grid grid-cols-12 gap-8 border-y border-gray-200 py-12 my-2">
 
-                    <div class="col-span-12 lg:col-span-4">
-                        <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
-                            Index / Contents
-                        </h2>
-                    </div>
+                        <div className="col-span-12 lg:col-span-4">
+                            <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
+                                Index / Contents
+                            </h2>
+                        </div>
 
-                    <div class="col-span-12 lg:col-span-8">
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12">
+                        <div className="col-span-12 lg:col-span-8">
+                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12">
+                                {tableOfContents.map((item, index) => (
+                                    <li key={`${item.id}-${index}`}>
+                                        <a href={getTocHref(item.id)} className="group flex items-center gap-3">
+                                            <span className="text-[10px] font-mono text-gray-400 group-hover:text-[var(--color-maintext)] transition-colors">
+                                                {String(index + 1).padStart(2, '0')}.
+                                            </span>
+                                            <span className="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">
+                                                {item.title}
+                                            </span>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
-                            <li>
-                                <a href="#" class="group flex items-center gap-3">
-                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">01.</span>
-                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">The Curator's Mindset</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="group flex items-center gap-3">
-                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">02.</span>
-                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">Physical vs. Digital Space</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="group flex items-center gap-3">
-                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">03.</span>
-                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">Intentional Asymmetry</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="group flex items-center gap-3">
-                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">04.</span>
-                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">Tonal Layering</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                </nav>
+                    </nav>
+                )}
 
                 {/* Article body — MDX content renders here */}
                 <article className="flex flex-col gap-10 -mt-11 justify-center items-center ">
@@ -173,7 +165,7 @@ export default function ArticleLayout({ frontmatter, children }) {
                     <footer className="border-t border-[var(--color-darkgray)] pt-16 grid grid-cols-12 gap-4 px-5">
                         <div className="col-span-4 flex flex-col gap-4 justify-center items-center">
                             <div className="w-24 h-24 rounded-full overflow-hidden bg-[var(--color-lightgray)] border border-[var(--color-p3text)]">
-                                <img src={authorImage} alt={authorName}
+                                <img src={authorImageSrc} alt={authorName}
                                     className="w-full h-full object-cover grayscale" />
                             </div>
                             <div className="space-y-1 flex flex-col items-center justify-center">

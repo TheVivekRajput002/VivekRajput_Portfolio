@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import BlogCard from '../components/blogs/BlogCard'
 import BlogsData from '../data/BlogsData.json'
 import { motion, useInView } from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 
 function Blogs() {
@@ -25,7 +26,9 @@ function Blogs() {
 
                     {
                         BlogsData.map(blog => (
-                            <BlogCard key={blog.id} title={blog.title} description={blog.description} id={blog.id} category={blog.category} date={blog.date} img_url={blog.img_url} />
+                            <Link key={blog.id} to={`/blog/${blog.slug}`}>
+                                <BlogCard title={blog.title} description={blog.description} id={blog.id} category={blog.category} date={blog.date} img_url={blog.img_url} />
+                            </Link>
                         ))
                     }
                 </div>

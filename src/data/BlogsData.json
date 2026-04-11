@@ -1,27 +1,20 @@
 [
     {
         "id": 1,
-        "title": "Discovering peace",
-        "description": "Far from the city's noise, the green mountains stretch endlessly into the horizon, blanketed with mist and silence.",
-        "category":"Backend",
-        "date":"25 Jan-26",
-        "img_url":"https://lh3.googleusercontent.com/aida-public/AB6AXuDe7L7ShMG9RmYrUeYxn29u_itaqGCGnqzgNWGVab65f9Ayc-6B1vM9eK9VMfylIRywzwqSpcvmHWUYimjUD5glItHKfOUJ-kcxI81ZaBM9AA15HsvrpwpdkZ0nkvKqeaAA7QuTzJTDi9c0j5ITslht4KVaal8dJpXKJt2g6MfbpVauzCLOZdnJYmRHKRTpmM1Xwk5bnvZ4UBGLNxtl81uk6O1ySDjEHaxXyIzzZMhvAzMwX0Tq_8UhxY4AVHRhi3mbIBbddht0hanq"
+        "slug": "the-million-dollar-minutes",
+        "title": "The Million-Dollar Minutes: Why Backend Matters",
+        "description": "From client-server communication to databases and architecture patterns — a deep dive into the world backend development.",
+        "category": "Backend",
+        "date": "11 April-26",
+        "img_url": "https://i.pinimg.com/1200x/0f/7b/bb/0f7bbb751159607cb55f464e00ed63ae.jpg"
     },
     {
-        "id": 1,
-        "title": "Discovering peace",
-        "description": "Far from the city's noise, the green mountains stretch endlessly into the horizon, blanketed with mist and silence.",
-        "category":"Backend",
-        "date":"25 Jan-26",
-        "img_url":"https://lh3.googleusercontent.com/aida-public/AB6AXuDe7L7ShMG9RmYrUeYxn29u_itaqGCGnqzgNWGVab65f9Ayc-6B1vM9eK9VMfylIRywzwqSpcvmHWUYimjUD5glItHKfOUJ-kcxI81ZaBM9AA15HsvrpwpdkZ0nkvKqeaAA7QuTzJTDi9c0j5ITslht4KVaal8dJpXKJt2g6MfbpVauzCLOZdnJYmRHKRTpmM1Xwk5bnvZ4UBGLNxtl81uk6O1ySDjEHaxXyIzzZMhvAzMwX0Tq_8UhxY4AVHRhi3mbIBbddht0hanq"
-    },
-    {
-        "id": 1,
-        "title": "Discovering peace",
-        "description": "Far from the city's noise, the green mountains stretch endlessly into the horizon, blanketed with mist and silence.",
-        "category":"Backend",
-        "date":"25 Jan-26",
-        "img_url":"https://lh3.googleusercontent.com/aida-public/AB6AXuDe7L7ShMG9RmYrUeYxn29u_itaqGCGnqzgNWGVab65f9Ayc-6B1vM9eK9VMfylIRywzwqSpcvmHWUYimjUD5glItHKfOUJ-kcxI81ZaBM9AA15HsvrpwpdkZ0nkvKqeaAA7QuTzJTDi9c0j5ITslht4KVaal8dJpXKJt2g6MfbpVauzCLOZdnJYmRHKRTpmM1Xwk5bnvZ4UBGLNxtl81uk6O1ySDjEHaxXyIzzZMhvAzMwX0Tq_8UhxY4AVHRhi3mbIBbddht0hanq"
+        "id": 2,
+        "slug": "how-authentication-actually-works",
+        "title": "How Authentication Actually Works",
+        "description": "HTTP is stateless — so how do websites remember you? JWT explained simply.",
+        "category": "Backend",
+        "date": "15 April-26",
+        "img_url": "https://i.pinimg.com/1200x/1d/0e/67/1d0e679dacd03e3005e12f9a7eccf1e9.jpg"
     }
-
 ]

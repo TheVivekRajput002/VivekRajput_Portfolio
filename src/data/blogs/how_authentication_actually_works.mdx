@@ -1,0 +1,74 @@
+---
+title: "How Authentication Actually Works"
+description: "HTTP is stateless — so how do websites remember you? JWT explained simply."
+volume: "Vol. 01"
+label: "Easy Read"
+image: "https://i.pinimg.com/1200x/1d/0e/67/1d0e679dacd03e3005e12f9a7eccf1e9.jpg"
+imageCaption: "Fig 01. Json Web Token"
+imageSubCaption: "JWT - Token based authentication"
+imageReference: "Google © 2026"
+meta:
+  - key: "Published Date"
+    value: "15 April 2026"
+  - key: "Tech Category"
+    value: "Backend"
+  - key: "Reading Time"
+    value: "8:00 Min"
+  - key: "Difficulty"
+    value: "Beginner"
+authorName: "Vivek Rajput"
+authorRole: "Developer & Designer"
+authorBio: "Crafting seamless experiences and bold visuals. College student by day, creative thinker, and aspiring innovator by night."
+authorImage: "/assets/vr_pfp.png"
+toc:
+  - title: Your First Visit — Registering
+  - title: The Token — Your Digital Pass
+  - title: Every Request After That 
+
+---
+
+# Why Does a Website Still Know Who You Are After You Close the Tab?
+
+You close a tab, reopen it, and you're still logged in. No password prompt. No "who are you again?" The website just... knows.
+
+How? HTTP is **stateless** — meaning the server forgets you the moment a request ends. Every request is a blank slate. So something else has to do the remembering.
+
+That something is a **JWT — JSON Web Token**.
+
+---
+
+## 1. Your First Visit — Registering
+
+When you create an account, your browser sends your details to the server:
+
+```
+{
+username: "vivek",
+email: "vivek@email.com",
+password: "••••••••"
+}
+```
+
+The server takes that data and tells the database to save it. The database creates a record and hands back a **unique user ID** — essentially your identity on that server.
+
+---
+
+## 2. The Token — Your Digital Pass
+
+The server doesn't just send you the ID and call it a day. Instead, it takes that ID, **packs it into a token, and signs it** — like stamping a wax seal on a letter to prove it's genuine.
+
+That signed token gets sent back to you (the client), and your browser stores it — usually in `localStorage` or a cookie.
+
+This is the moment you're "logged in." You now hold a signed pass that proves who you are.
+
+---
+
+## 3. Every Request After That 
+
+From this point on, every request you send to the server comes with the token attached.
+
+The server receives it, **decodes it, verifies the signature**, and instantly knows who you are — no database lookup needed for identity. It then fetches whatever you asked for and sends back the response.
+
+Close the tab, reopen it — the token is still there. The server still recognizes it. That's why you're still logged in.
+
+> The server never "remembers" you. It just keeps reading your pass.

@@ -10,7 +10,7 @@ import Footer from '../src/components/Footer'
 import { Routes, Route } from 'react-router-dom'
 import LocomotiveScroll from 'locomotive-scroll';
 import ThemeToggle from './components/ThemeToggle'
-import { FaReact, RiTailwindCssFill, SiFramer } from "react-icons/fa";
+
 
 
 function App() {

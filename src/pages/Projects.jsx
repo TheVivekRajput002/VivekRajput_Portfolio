@@ -4,7 +4,6 @@ import React from 'react'
 import ProjectCard from '../components/projects/ProjectCard'
 import ProjectsData from '../data/ProjectsData.json'
 
-
 const Projects = () => {
   return (
     <div className=' mt-3'>

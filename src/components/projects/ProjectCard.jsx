@@ -2,12 +2,27 @@
 
 import React from 'react'
 import Phone from './Phone'
-import isDark from '../Navbar'
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
 import { Github } from "lucide-react"
+import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa"
+import { RiTailwindCssFill, RiJavascriptFill, RiGeminiFill } from "react-icons/ri"
+import { SiFramer, SiNextdotjs, SiSupabase, SiTailwindcss, SiGoogle } from "react-icons/si"
 
 const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech, role, contributions, icons, year, github }) => {
+    const iconComponents = {
+        FaReact,
+        RiTailwindCssFill,
+        SiFramer,
+        SiNextdotjs,
+        SiSupabase,
+        SiTailwindcss,
+        SiGoogle,
+        FaHtml5,
+        FaCss3Alt,
+        RiJavascriptFill,
+        RiGeminiFill
+    }
 
     return (
         <div>
@@ -186,9 +201,19 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
                     <div className='flex'>
                         <div className='flex items-center gap-2 flex-wrap'>
                             {
-                                icons.map((icon) => (
-                                    <img className='h-8' key={icon.id} src={icon.img} alt="tech icon" />
-                                ))
+                                (icons || []).map((icon) => {
+                                    const IconComponent = iconComponents[icon?.img]
+
+                                    if (IconComponent) {
+                                        return (
+                                            <span key={icon.id} className="inline-flex items-center justify-center text-[var(--color-maintext)]">
+                                                <IconComponent size={28} />
+                                            </span>
+                                        )
+                                    }
+
+                                    return null
+                                })
                             }
                         </div>
                     </div>

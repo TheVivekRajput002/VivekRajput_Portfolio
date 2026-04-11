@@ -17,15 +17,15 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/ReactIcon.png"
+                "img": "FaReact"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "RiTailwindCssFill"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/FramermotionIcon.png"
+                "img": "SiFramer"
             }
         ]
     },
@@ -47,19 +47,19 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/NextjsIcon.png"
+                "img": "SiNextdotjs"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/SupabaseIcon.png"
+                "img": "SiSupabase"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/GeminiIcon.png"
+                "img": "RiGeminiFill"
             },
             {
                 "id": 4,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "SiTailwindcss"
             }
         ]
     },
@@ -81,15 +81,15 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/NextjsIcon.png"
+                "img": "SiNextdotjs"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "SiTailwindcss"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/SupabaseIcon.png"
+                "img": "SiSupabase"
             }
         ]
     },
@@ -116,11 +116,11 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/ReactIcon.png"
+                "img": "FaReact"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "SiTailwindcss"
             }
         ]
     },
@@ -147,15 +147,15 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/NextjsIcon.png"
+                "img": "SiNextdotjs"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/SupabaseIcon.png"
+                "img": "SiSupabase"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "SiTailwindcss"
             }
         ]
     },
@@ -177,15 +177,15 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/ReactIcon.png"
+                "img": "FaReact"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "SiTailwindcss"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/SupabaseIcon.png"
+                "img": "SiSupabase"
             }
         ]
     },
@@ -211,15 +211,15 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/ReactIcon.png"
+                "img": "FaReact"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "SiTailwindcss"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/SupabaseIcon.png"
+                "img": "SiSupabase"
             }
         ]
     },
@@ -246,15 +246,15 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/HtmlIcon.png"
+                "img": "FaHtml5"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/CssIcon.png"
+                "img": "FaCss3Alt"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/JavascriptIcon.png"
+                "img": "RiJavascriptFill"
             }
         ]
     },
@@ -277,16 +277,17 @@
         "icons": [
             {
                 "id": 1,
-                "img": "/assets/icons/HtmlIcon.png"
+                "img": "FaHtml5"
             },
             {
                 "id": 2,
-                "img": "/assets/icons/CssIcon.png"
+                "img": "FaCss3Alt"
             },
             {
                 "id": 3,
-                "img": "/assets/icons/TailwindcssIcon.png"
+                "img": "SiTailwindcss"
             }
         ]
     }
 ]
+

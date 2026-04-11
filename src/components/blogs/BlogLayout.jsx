@@ -93,9 +93,54 @@ export default function ArticleLayout({ frontmatter, children }) {
                     </div>
                 </section>
 
+{/* index  */}
+                <nav class="grid grid-cols-12 gap-8 border-y border-gray-200 py-12 my-2">
+
+                    <div class="col-span-12 lg:col-span-4">
+                        <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
+                            Index / Contents
+                        </h2>
+                    </div>
+
+                    <div class="col-span-12 lg:col-span-8">
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12">
+
+                            <li>
+                                <a href="#" class="group flex items-center gap-3">
+                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">01.</span>
+                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">The Curator's Mindset</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="group flex items-center gap-3">
+                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">02.</span>
+                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">Physical vs. Digital Space</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="group flex items-center gap-3">
+                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">03.</span>
+                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">Intentional Asymmetry</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="group flex items-center gap-3">
+                                    <span class="text-[10px] font-mono text-gray-300 group-hover:text-gray-900 transition-colors">04.</span>
+                                    <span class="text-sm font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-300">Tonal Layering</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+
                 {/* Article body — MDX content renders here */}
-                <article className="flex flex-col gap-10 -mt-11 justify-center items-center">
-                    <div className="max-w-none">
+                <article className="flex flex-col gap-10 -mt-11 justify-center items-center ">
+                    <div className="w-full max-w-none px-6">
                         {children}
                     </div>
 

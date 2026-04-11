@@ -22,6 +22,8 @@ function App() {
           backgroundImage:
             "linear-gradient(to right, var(--color-infiniteimgbg) 1px, transparent 0.5px), linear-gradient(to bottom, var(--color-infiniteimgbg) 1px, transparent 0.5px)",
           backgroundSize: "40px 40px",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "top left",
         }}
       >
 
@@ -34,6 +36,7 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/projects' element={<Projects />} />
               <Route path='/blogs' element={<Blog />} />
+              <Route path='/blogs/:id' element={<Blogs />} />
               <Route path='/pagenotfound' element={<NotFound />} />
             </Routes>
           </main>

@@ -1,5 +1,6 @@
 import BlogLayout, { mdxComponents } from '../components/blogs/BlogLayout'
-import Content, { frontmatter } from '../data/blogs/blog1.mdx'
+// import Content, { frontmatter } from '../data/blogs/blog1.mdx'
+import Content, { frontmatter } from '../data/blogs/The_Million_Dollar_Minutes.mdx'
 
 export default function ArticlePage() {
   return (

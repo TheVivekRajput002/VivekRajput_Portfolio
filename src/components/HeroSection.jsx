@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'motion/react';
 import vivek_rajput_pfp from '/assets/vr_professional_pfp.png'
+import vr_pfp from '/assets/vr_pfp.png'
 
 const HeroSection = ({ Name, Role, Description }) => {
     return (
@@ -12,8 +13,9 @@ const HeroSection = ({ Name, Role, Description }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 1.1 }}
+                    // src={vr_pfp}
                     src={vivek_rajput_pfp}
-                    className='h-[120px] mb-[20px] max-md:h-[85px]'
+                    className='h-[110px] mb-[20px] max-md:h-[85px]'
                 />
 
 
@@ -34,7 +36,7 @@ const HeroSection = ({ Name, Role, Description }) => {
                         ease: "easeOut",
                         delay: 2.3
                     }}
-                    className='font-[650] text-[var(--color-maintext)] max-md:text-3xl text-4xl clash'
+                    className='font-[800] text-[var(--color-maintext)] max-md:text-3xl text-4xl clash'
 
                 >
                     {Name}
@@ -107,11 +109,6 @@ const HeroSection = ({ Name, Role, Description }) => {
             </main>
 
             <style jsx>{`
-
-
- @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800&display=swap');
- @import url('https://api.fontshare.com/v2/css?f[]=clash-grotesk@500,600&display=swap');
-
  .clash{
  font-family: 'Clash Grotesk', sans-serif;
 font-weight: 500; /* or 600 */

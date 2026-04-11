@@ -33,9 +33,9 @@ export default function IconsFlow() {
     { id: 4, img: NextjsIcon },
     { id: 5, img: SupabaseIcon },
     { id: 6, img: PostgresqlIcon },
-    { id: 7, img: MysqlIcon },
+    // { id: 7, img: MysqlIcon },
     { id: 8, img: JavascriptIcon },
-    { id: 9, img: PythonIcon },
+    // { id: 9, img: PythonIcon },
     { id: 10, img: FramermotionIcon },
     { id: 11, img: FigmaIcon },
     { id: 12, img: TailwindcssIcon },
@@ -69,7 +69,7 @@ export default function IconsFlow() {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-auto flex items-center justify-center shadow-xl transition-transform"
+                className="flex-shrink-0 w-auto flex items-center justify-center transition-transform"
               >
                 <img
                   src={item.img}

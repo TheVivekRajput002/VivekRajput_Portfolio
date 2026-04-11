@@ -1,0 +1,53 @@
+[
+    {
+        "id":1,
+        "title": "Frontend",
+        "stack": [
+            "Tailwind CSS",
+            "shadCN UI",
+            "Framer Motion",
+            "React.js",
+            "Next.js"
+        ]
+    },
+    {
+        "id":2,
+        "title": "Backend",
+        "stack": [
+            "Node.js",
+            "Express.js",
+            "Supabase",
+            "Clerk",
+            "JWT Auth",
+            "REST APIs",
+            "GraphQL"
+        ]
+    },
+    {
+        "id":3,
+        "title": "Database",
+        "stack": [
+            "PostgreSQL",
+            "MongoDB"
+        ]
+    },
+    {
+        "id":4,
+        "title": "Languages",
+        "stack": [
+            "JavaScript",
+            "TypeScript"
+        ]
+    },
+    {
+        "id":5,
+        "title": "Tools",
+        "stack": [
+            "Postman",
+            "Git & Github",
+            "Figma",
+            "Vercel",
+            "Render"
+        ]
+    }
+]

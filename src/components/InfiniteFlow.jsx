@@ -22,7 +22,7 @@ export default function InfiniteFlow() {
         .scroll-trackk {
           display: flex;
           width: max-content;
-          animation: scroll 20s linear infinite;
+          animation: scroll 30s linear infinite;
           will-change: transform;
         }
 

@@ -1,6 +1,6 @@
 
 import { motion } from 'motion/react';
-import { House, Instagram, FileText, Sun, Moon, Folders, Linkedin } from 'lucide-react'
+import { House, Instagram, FileText, Sun, Moon, Folders, Linkedin, NotepadText } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -27,6 +27,8 @@ export default function Navbar() {
 
   if (!mounted) return null;
 
+  const strokeWidth = 1.2
+
   return (
     <>
 
@@ -45,25 +47,26 @@ export default function Navbar() {
           delay: 1.4,
           duration: 0.8
         }}
-        className="max-md:hidden fixed top-7 z-100 left-1/2 -translate-x-1/2 flex items-center gap-4 px-4 py-2 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-20">
+        className="max-md:hidden fixed top-7 z-100 left-1/2 -translate-x-1/2 flex items-center gap-4 px-2.5 py-1 rounded-3xl transparent-2 bg-[var(--color-navbg)] border border-[var(--color-darkgray)] h-17">
 
         {/* Home */}
-        <Link to="/" className="relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
-          <House strokeWidth={1.5} color='var(--color-maintext)' />
+        <Link to="/" className="-mr-2 relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+          <House strokeWidth={strokeWidth} size={20} color='var(--color-maintext)' />
           <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Home</span>
         </Link>
 
-        <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
+        <div className="border-l-1 border-solid border-[var(--color-darkgray)] h-6 mx-1" > </div>
 
-        {/* Linkedin */}
-        <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
-          <Linkedin stroke='var(--color-maintext)' strokeWidth={1.5} />
-          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">LinkedIn</span>
-        </a>
+        {/* Blogs */}
+        <Link to="/blogs" className="-mr-2 relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+          <NotepadText strokeWidth={strokeWidth} color='var(--color-maintext)' size={20} />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Blogs</span>
+        </Link>
+
 
         {/* projects */}
         <Link to="/projects" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
-          <Folders strokeWidth={1.5} color='var(--color-maintext)' />
+          <Folders strokeWidth={strokeWidth} size={20} color='var(--color-maintext)' />
           <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Projects</span>
         </Link>
 
@@ -72,32 +75,34 @@ export default function Navbar() {
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a> */}
         <Link to="https://drive.google.com/drive/folders/1uHIPEDG3dbhgkYVedqrApzGmxoRXrAqu?usp=sharing" target="_blank" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
-          <FileText strokeWidth={1.5} color='var(--color-maintext)' />
+          <FileText strokeWidth={strokeWidth} size={20} color='var(--color-maintext)' />
           <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Resume</span>
         </Link>
 
-        <div className="border-l-1 border-solid border-[var(--color-maintext)] h-6 " > </div>
+        <div className="border-l-1 border-solid border-[var(--color-darkgray)] h-6 " > </div>
 
         {/* Dark Light Mode */}
         <button
           onClick={() => setIsDark(!isDark)}
-          className={`relative rounded-full flex items-center justify-center transition-all duration-300 px-3 transform `}
+          className={`relative rounded-full flex items-center align-middle justify-center transition-all duration-300 px-3 transform `}
           aria-label="Toggle theme"
         >
-          <div className="relative w-8 h-8">
+          <div className="relative w-6 h-7">
             <Sun
-              className={`absolute inset-0 w-7 h-8 text-yellow-500 transition-all duration-300 ${isDark
+              className={`absolute inset-0 w-6 h-7 text-yellow-500 transition-all duration-300 ${isDark
                 ? 'opacity-0 rotate-90 scale-0'
                 : 'opacity-100 rotate-0 scale-100'
                 }`}
-              strokeWidth={1.5}
+              strokeWidth={strokeWidth}
+
             />
             <Moon
-              className={`absolute inset-0 w-7 h-8 text-blue-400 transition-all duration-300 ${isDark
+              className={`absolute inset-0 w-6 h-7 text-blue-400 transition-all duration-300 ${isDark
                 ? 'opacity-100 rotate-0 scale-100'
                 : 'opacity-0 -rotate-90 scale-0'
                 }`}
-              strokeWidth={1.5}
+              strokeWidth={strokeWidth}
+
             />
           </div>
         </button>
@@ -196,20 +201,20 @@ export default function Navbar() {
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a> */}
         <Link to="/pagenotfound" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
-          <FileText strokeWidth={1.5} color='var(--color-maintext)' />
+          <FileText strokeWidth={strokeWidth} color='var(--color-maintext)' />
           <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Resume</span>
         </Link>
 
-        {/* Linkedin */}
-        <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="relative group flex items-center gap-2 px-2 py-1 rounded-xl">
-          <Linkedin stroke='var(--color-maintext)' strokeWidth={1.5} />
-          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">LinkedIn</span>
-        </a>
+        {/* Blogs */}
+        <Link to="/blogs" className=" relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+          <NotepadText strokeWidth={strokeWidth} color='var(--color-maintext)' />
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Blogs</span>
+        </Link>
 
         {/* projects  */}
 
         <Link to="/projects" className="relative group flex items-center gap-2 px-2 py-1 rounded-xl">
-          <Folders strokeWidth={1.5} color='var(--color-maintext)' />
+          <Folders strokeWidth={strokeWidth} color='var(--color-maintext)' />
           <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Projects</span>
         </Link>
 
@@ -227,14 +232,14 @@ export default function Navbar() {
                 ? 'opacity-0 rotate-90 scale-0'
                 : 'opacity-100 rotate-0 scale-100'
                 }`}
-              strokeWidth={1.5}
+              strokeWidth={strokeWidth}
             />
             <Moon
               className={`absolute inset-0 w-7 h-8 text-blue-400 transition-all duration-300 ${isDark
                 ? 'opacity-100 rotate-0 scale-100'
                 : 'opacity-0 -rotate-90 scale-0'
                 }`}
-              strokeWidth={1.5}
+              strokeWidth={strokeWidth}
             />
           </div>
         </button>

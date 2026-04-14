@@ -185,10 +185,11 @@ export default function Navbar({ isDark, onToggleTheme }) {
         {/* <a href="https://drive.google.com/file/d/1aZA4kjRiai7IGK_iU6WaPuDjvWe_Wtq4/view?usp=sharing" target="_blank" className="flex items-center gap-2 px-2 py-1 rounded-xl ">
           <FileText strokeWidth={1.5} color='var(--color-maintext)' />
         </a> */}
-        <Link to="/pagenotfound" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
+        <Link to="https://drive.google.com/drive/folders/1uHIPEDG3dbhgkYVedqrApzGmxoRXrAqu?usp=sharing" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <FileText strokeWidth={strokeWidth} color='var(--color-maintext)' />
           <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-[var(--color-maintext)] bg-[var(--color-darkgray)] px-2 py-1 rounded whitespace-nowrap">Resume</span>
         </Link>
+
 
         {/* Blogs */}
         <Link to="/blogs" className=" relative group h-auto flex items-center gap-2 px-3 py-1 rounded-2xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">

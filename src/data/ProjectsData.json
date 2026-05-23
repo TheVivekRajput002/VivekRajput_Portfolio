@@ -64,6 +64,44 @@
         ]
     },
     {
+    "head": "BrainFood",
+    "year": "May 2026",
+    "ss": "/assets/SS/BrainFoodSS.png",
+    "tagline": "Learn, Grow & Get Inspired Through Short-Form Content",
+    "problem": "Needed an engaging way to deliver bite-sized educational content, combining the addictive nature of short-form video with structured micro-learning and gamified progress tracking.",
+    "highlights": [
+        "Built dual-role auth system (User + Creator) with JWT HTTP-only cookies and Google OAuth 2.0",
+        "Engineered event-driven achievement engine that auto-awards tiered badges and tracks scores on every user action",
+        "Integrated ImageKit CDN for optimized video and media delivery with TikTok-style vertical reel feed"
+    ],
+    "impact": "A full-stack learning platform with gamified achievements, scrollable card decks, and creator tools deployed live on Vercel + Render",
+    "tech": "React 19, Node.js, Express 5, MongoDB, Tailwind CSS 4, ImageKit, JWT, Google OAuth",
+    "github": "https://github.com/TheVivekRajput002/FoodReel",
+    "url": "https://foody-reel.vercel.app/",
+    "icons": [
+        {
+            "id": 1,
+            "img": "FaReact"
+        },
+        {
+            "id": 2,
+            "img": "RiTailwindCssFill"
+        },
+        {
+            "id": 3,
+            "img": "FaNode"
+        },
+        {
+            "id": 4,
+            "img": "SiMongodb"
+        },
+        {
+            "id": 5,
+            "img": "SiExpress"
+        }
+    ]
+},
+    {
         "head": "Smart Invoice & E-way bill System",
         "year": "3rd semester",
         "ss": "/assets/SS/InvoicePlatformSS.png",

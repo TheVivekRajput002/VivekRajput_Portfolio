@@ -24,11 +24,11 @@
             "link": "https://hisabkitab1.vercel.app/"
         },
         {
-            "id": 3,
-            "img": "KrishiMitraSS",
-            "title": "Krishi Mitra",
-            "para": "Collaborated on an AI-powered Crop Advisory Platform providing real-time insights, image-based crop analysis, and multilingual chatbot with voice support for farmer assistance.",
-            "link": "https://thevivekrajput-techportfolio.vercel.app/pagenotfound"
+            "id": 4,
+            "img": "BrainFoodSS",
+            "title": "FoodReel",
+            "para": "Built a full-stack short-form learning platform with reel style videos, scrollable card decks, gamified badge achievements, and a dual Creator/User role system with Google OAuth.",
+            "link": "https://github.com/TheVivekRajput002/FoodReel"
         }
     ],
     [

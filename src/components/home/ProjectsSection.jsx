@@ -4,6 +4,7 @@ import JlugSummerSS2 from '/assets/SS/JlugSummerSS2.webp'
 import KrishiMitraSS from '/assets/SS/KrishiMitraSS.webp'
 import InvoicePlatformSS from '/assets/SS/InvoicePlatformSS.png'
 import HireButSmarterSS from '/assets/SS/HireButSmarterSS.png'
+import BrainFoodSS from '/assets/SS/BrainFoodSS.png'
 import { Link } from 'react-router-dom'
 import IconsFlow from './IconsFlow'
 
@@ -31,7 +32,7 @@ const ProjectsSection = ({ projects }) => {
         "HireButSmarterSS": HireButSmarterSS,
         "InvoicePlatformSS": InvoicePlatformSS,
         "JlugSummerSS2": JlugSummerSS2,
-        "KrishiMitraSS": KrishiMitraSS
+        "BrainFoodSS": BrainFoodSS
     };
 
     const projectData = projects;

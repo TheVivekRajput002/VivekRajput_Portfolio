@@ -35,7 +35,6 @@ export default function Navbar({ isDark, onToggleTheme }) {
 
         <div className="border-l-1 border-solid border-[var(--color-darkgray)] h-6 mx-1" > </div>
 
-
             {/* Linkedin */}
         {/* <a href="https://www.linkedin.com/in/vivek-rajput-tvr002/" target="_blank" className="relative group flex items-center gap-2 px-3 py-1 rounded-xl hover:bg-[var(--color-darkgray)] hover:px-4 hover:py-3 transition-all ease-in-out duration-150">
           <Linkedin stroke='var(--color-maintext)' strokeWidth={strokeWidth} size={20} />

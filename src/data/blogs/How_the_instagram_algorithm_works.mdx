@@ -1,0 +1,223 @@
+---
+title: "How the Instagram Algorithm Works"
+description: "Your feed isn't random , it's a machine that scores, ranks, and serves content built for you. Here's how it works, and how you can build your own."
+volume: "Vol. 01"
+label: "Deep Dive"
+image: "https://i.pinimg.com/736x/ed/07/54/ed075400035e6ba83f3217741fb58c53.jpg"
+imageCaption: "Fig 01. Really Addictive Feed"
+imageSubCaption: "Instagram feed is so personalised and Addictive"
+imageReference: "Pinterest © 2026"
+meta:
+  - key: "Published Date"
+    value: "20 May 2026"
+  - key: "Tech Category"
+    value: "Backend / Systems"
+  - key: "Reading Time"
+    value: "10:00 Min"
+  - key: "Difficulty"
+    value: "Intermediate"
+authorName: "Vivek Rajput"
+authorRole: "Developer & Designer"
+authorBio: "Crafting seamless experiences and bold visuals. College student by day, creative thinker, and aspiring innovator by night."
+authorImage: "/assets/vr_pfp.png"
+toc:
+  - title: "The Lie of the Chronological Feed"
+  - title: "Stage 1 — Candidate Generation"
+  - title: "Stage 2 — Scoring & Ranking"
+  - title: "Stage 3 — Diversity & Deduplication"
+  - title: "Stage 4 — Pagination"
+  - title: "Building Your Own Version"
+  - title: "The Formula That Actually Works"
+---
+
+# Your Feed Isn't Random. It's a Machine That Knows You.
+
+You open Instagram Reels. The first video makes you laugh. The second is exactly the creator you forgot to follow. The third is a tutorial on something you Googled yesterday.
+
+That's not luck. That's a ranking pipeline — a multi-stage system that processes hundreds of candidates, scores every single one, and serves you the subset most likely to make you stay.
+
+The algorithm isn't magic. It's math. And once you understand the math, you can build your own version.
+
+---
+
+## 1. The Lie of the Chronological Feed
+
+Most beginners — and most beginner projects — serve a feed that looks like this on the backend:
+
+```js
+const reels = await reelModel.find({}).populate("creator");
+```
+
+
+That's it. No sorting. No filtering. No intelligence. Just: _give me everything, in the order it was inserted._
+
+The frontend then renders `videos.map(...)` in straight array order. Oldest first. Newest last. Same sequence every single time.
+
+This is fine for a prototype. It's a disaster for a product.
+
+Because here's the truth: **a chronological feed optimizes for the creator, not the viewer.** The person who posts most often wins the most screen time — regardless of quality, relevance, or whether you've seen it ten times already.
+
+Instagram figured this out in 2016 and switched to ranked feeds. They took a lot of heat for it. They were right to do it anyway.
+
+---
+
+## 2. Stage 1 — Candidate Generation
+
+Before Instagram can rank anything, it needs a pool of candidates to rank _from_.
+
+It doesn't look at every reel ever posted. That would be impossibly slow. Instead, it pulls a pool of roughly **500 candidate reels** from a few specific sources:
+
+- **Reels from creators you follow** — baseline relevance
+- **Reels similar to ones you liked, saved, or watched fully** — taste matching
+- **Trending reels** — high engagement rate, viral momentum
+- **New reels** — recency boost to surface fresh content
+
+This is the "rough cut." You go from millions of posts down to a few hundred worth actually scoring.
+
+> Think of it like a hiring process. You don't interview every applicant. You filter résumés first, then score the shortlist.
+
+---
+
+## 3. Stage 2 — Scoring & Ranking
+
+This is where the real intelligence lives. Every candidate reel gets a **score** — a single number that determines its position in your feed.
+
+Here's a simplified version of the signals Instagram uses:
+
+<table>
+  <thead>
+    <tr>
+      <th>Signal</th>
+      <th>Weight</th>
+      <th>What It Means</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>likeCount / views</code></td>
+      <td>High</td>
+      <td>Engagement rate — is this content good?</td>
+    </tr>
+    <tr>
+      <td><code>isFollowing</code></td>
+      <td>High</td>
+      <td>Prioritize creators you already trust</td>
+    </tr>
+    <tr>
+      <td><code>recency</code></td>
+      <td>Low</td>
+      <td>Newer posts get a time-decay boost</td>
+    </tr>
+    <tr>
+      <td><code>watchTime</code></td>
+      <td>High</td>
+      <td>Did people watch it fully, or scroll past?</td>
+    </tr>
+    <tr>
+      <td><code>saves / bookmarks</code></td>
+      <td>High</td>
+      <td>Saving = strong intent signal</td>
+    </tr>
+    <tr>
+      <td><code>user-creator affinity</code></td>
+      <td>High</td>
+      <td>Have you interacted with this creator before?</td>
+    </tr>
+    <tr>
+      <td><code>not-yet-seen</code></td>
+      <td>Critical</td>
+      <td>Never show a reel you've already watched</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+The last one is underrated. **Re-serving content the user already watched is one of the fastest ways to make a feed feel stale.** Instagram aggressively filters out seen content — and your app should too.
+
+Watch time is the most honest signal of the bunch. A like costs one tap. Watching a 30-second video fully costs 30 seconds of someone's actual attention. You can't fake that. Platforms that optimize for watch time tend to surface better content than platforms that optimize for likes.
+
+---
+
+## 4. Stage 3 — Diversity & Deduplication
+
+A high score doesn't guarantee placement. Before the final feed is assembled, Instagram runs a **diversity pass** to prevent the feed from collapsing into a monoculture:
+
+- **No more than 2 reels from the same creator in a row** — prevents creator monopolies
+- **Mix content types** — educational, funny, emotional, inspirational
+- **Inject "exploration" reels** — a few reels from creators you don't follow, to surface new voices
+
+That last point is intentional product design, not an accident. If you only ever see content from people you already follow, the graph never grows. Discovery reels are how Instagram expands your taste graph — and how new creators get found.
+
+---
+
+## 5. Stage 4 — Pagination
+
+Instagram doesn't send you all your reels at once. It sends **10–20 at a time**, with a cursor you can use to fetch the next batch as you scroll.
+
+This is called **cursor-based pagination**, and it's better than page numbers for infinite-scroll feeds because:
+
+- It doesn't break when new posts are inserted between fetches
+- It's stateless — the cursor encodes position, not state
+- It's faster — the database doesn't have to count total rows
+
+Every "load more" scroll triggers a new ranked batch, freshly scored for that moment.
+
+---
+
+## 6. Building Your Own Version
+
+Here's the good news: if you're building a Reels-style feature, you probably already have all the data you need.
+
+If your app tracks **likes, saves, watched reels, and follows** — and most do — you already have the raw material for a real feed algorithm. The gap isn't data. It's the query.
+
+Here's the architecture that hits the sweet spot between "dumb shuffle" and "full ML pipeline":
+
+```
+┌─────────────────────────────────────────────┐
+│              GET /api/reel                  │
+│                                             │
+│  1. Get watched reel IDs for this user      │
+│  2. Find reels NOT in watched list          │
+│  3. Score each reel:                        │
+│     score = likes×2 + saves×3 + recency     │
+│  4. Add random jitter (±15%) for variety    │
+│  5. Sort by score descending                │
+│  6. Limit to 15, skip by cursor             │
+│  7. Sprinkle in 2-3 random "discovery"      │
+│     reels from unfollowed creators          │
+│  8. Return paginated response               │
+└─────────────────────────────────────────────┘
+```
+
+No machine learning. No external services. No weeks of infrastructure work.
+
+Just smarter queries.
+
+---
+
+## 7. The Formula That Actually Works
+
+Here's a concrete scoring formula you can drop into your backend today:
+
+```js
+// For each reel candidate:
+const recencyBoost = Math.max(0, 7 - daysSincePosted); // decays over 7 days
+const alreadyWatchedPenalty = userWatchedIds.includes(reel._id) ? -9999 : 0;
+
+const score =
+  (reel.likeCount * 2) +
+  (reel.bookmarkCount * 3) +
+  (recencyBoost * 1.5) +
+  alreadyWatchedPenalty +
+  (Math.random() * 0.15 * baseScore); // ±15% jitter for variety
+```
+
+Then sort descending by score, take the top 15, and inject 2–3 random reels from creators the user doesn't follow for discovery.
+
+That's it. That's an algorithm.
+
+It's not Instagram's algorithm — Instagram has thousands of engineers and a decade of behavioral data feeding a neural net. But it's _your_ algorithm. It's transparent, explainable, tunable, and built entirely on data your app already has.
+
+And unlike `find({})`, it actually thinks about the person on the other side of the screen.
+
+> The algorithm isn't trying to be clever. It's trying to answer one question: _what does this specific person most want to see right now?_ Start there, and the engineering follows naturally.

@@ -38,8 +38,10 @@ const ThemeToggle = ({ isDark = false, onToggleTheme }) => {
         const gravity = 0.9;
         const friction = 0.996;
         const iterations = 16;
-        const segmentCount = 9;
-        const segmentLen = 18;
+        const isMobile = window.innerWidth < 768;
+
+        const segmentCount = isMobile ? 7 : 9;
+        const segmentLen = isMobile ? 14 : 18;
 
         pointsRef.current = [];
         sticksRef.current = [];

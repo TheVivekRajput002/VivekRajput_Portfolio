@@ -22,7 +22,7 @@ function Blogs() {
                     Blogs.
                 </motion.h2>
 
-                <div className='flex flex-col gap-10 mt-14'>
+                <div className='flex flex-col gap-10 mt-14 max-md:mb-10'>
 
                     {
                         BlogsData.map(blog => (

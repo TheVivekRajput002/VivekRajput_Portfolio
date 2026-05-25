@@ -16,5 +16,23 @@
         "category": "Backend",
         "date": "15 April-26",
         "img_url": "https://i.pinimg.com/1200x/1d/0e/67/1d0e679dacd03e3005e12f9a7eccf1e9.jpg"
+    },
+    {
+        "id": 3,
+        "slug": "how-the-instagram-algorithm-works",
+        "title": "How the Instagram Algorithm Works",
+        "description": "Your feed isn't random — it's a machine that scores, ranks, and serves content built for you. Here's how it works, and how you can build your own.",
+        "category": "Backend / Systems",
+        "date": "20 May-26",
+        "img_url": "https://i.pinimg.com/736x/d2/b6/a1/d2b6a1ac06bfbabaa6bbbf66aac8443c.jpg"
+    },
+    {
+        "id": 4,
+        "slug": "why-most-developer-portfolios-look-the-same",
+        "title": "Why Most Developer Portfolios Look the Same",
+        "description": "Dark mode, project cards, and tech logos everywhere — here's why most developer portfolios feel identical and what actually makes one stand out.",
+        "category": "Career / Portfolio",
+        "date": "25 May-26",
+        "img_url": "https://i.pinimg.com/control1/1200x/5b/44/0a/5b440a039eb3eef5bbbe5c50b9e3f9a6.jpg"
     }
 ]

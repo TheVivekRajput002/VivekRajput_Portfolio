@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import JlugSummerSS from '/assets/SS/JlugSummerSS.webp'
+import JlugSummerSS from '/assets/SS/JlugSummerSS.png'
 import KrishiMitraSS from '/assets/SS/KrishiMitraSS.webp'
 import InvoicePlatformSS from '/assets/SS/InvoicePlatformSS.png'
 import HireButSmarterSS from '/assets/SS/HireButSmarterSS.png'

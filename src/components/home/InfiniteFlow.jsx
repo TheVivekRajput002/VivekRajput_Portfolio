@@ -2,7 +2,7 @@
 
 export default function InfiniteFlow() {
   const images = [
-    { id: 1, src: '/assets/SS/JlugSummerSS.webp', alt: "Jlug Summer" },
+    { id: 1, src: '/assets/SS/JlugSummerSS.png', alt: "Jlug Summer" },
     { id: 2, src: '/assets/SS/VoiceScribeSS.png', alt: "Voice Scribe" },
     { id: 3, src: '/assets/SS/GDPortfolioSS.png', alt: "GD Portfolio" },
     { id: 4, src: '/assets/SS/KrishiMitraSS.webp', alt: "Krishi Mitra" },

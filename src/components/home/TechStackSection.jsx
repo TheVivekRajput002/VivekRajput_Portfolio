@@ -42,12 +42,14 @@ export default function TechSection() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, margin: "-50px" }}
-                        className="flex w-full flex-wrap gap-3"
+                        className={`flex w-full flex-wrap gap-3 ${techStack.id === 1 && "mb-2"}`}
                     >
-                        <MotionBadgeWrap><Badge>
-                            {techStack.id === 2 && <BadgeCheckIcon color="var(--color-maintext)" />}
-                            {techStack.title}
-                        </Badge></MotionBadgeWrap>
+                        <MotionBadgeWrap>
+                            <Badge>
+                                {techStack.id === 1 && <BadgeCheckIcon color="var(--color-maintext)" />}
+                                {techStack.title}
+                            </Badge>
+                        </MotionBadgeWrap>
                         {
                             techStack.stack.map(stack => (
                                 <MotionBadgeWrap key={`${techStack.id}-${stack.name}`}>

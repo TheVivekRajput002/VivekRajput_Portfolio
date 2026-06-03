@@ -2,11 +2,11 @@
     {
         "Name": "I'm Vivek Rajput",
         "Role": "Designer & Developer",
-        "Description": "Crafting seamless experiences and bold visuals. College student by day, creative thinker, and aspiring innovator by night."
+        "Description": "I build the backend. The part users never see but always feel. Currently Working with TypeScript Node.js Express.js PostgreSQL"
     },
     {
-        "AboutPara1": "I'm Vivek Rajput, a curious designer, coder, and a problem solver. Currently a student at Jabalpur Engineering College, but always exploring the limitless possibilities of creativity and technology.",
-        "AboutPara2": "I thrive on transforming problems into solutions, ideas into reality, whether it's crafting digital interfaces, designing immersive visuals, or building websites that feel effortless to use."
+        "AboutPara1": "Built and deployed a full production SaaS for a real business that includes features like billing, inventory, vendor management, staff and salary tracking, with Gemini OCR eliminating manual invoice entry entirely. Not a tutorial project — live and in use",
+        "AboutPara2": "Also shipped multi-language support (English/Hindi) and a keyboard shortcut system for power users — because good backend work shows up in the details too."
     },
     [
         {

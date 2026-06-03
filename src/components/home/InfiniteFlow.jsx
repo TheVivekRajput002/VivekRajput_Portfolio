@@ -61,11 +61,11 @@ export default function InfiniteFlow() {
 
 // export default function InfiniteFlow() {
 //   const images = [
-//     { id: 1, src: JlugSummerSS2, alt: "Jlug Summer" },
+//     { id: 1, src: JlugSummerSS, alt: "Jlug Summer" },
 //     { id: 2, src: KrishiMitraSS, alt: "Krishi Mitra" },
 //     { id: 3, src: NoteBlocSS, alt: "Note Bloc" },
 //     { id: 4, src: TheZenWebsiteSS, alt: "Note Bloc" },
-//     { id: 5, src: JlugSummerSS2, alt: "Note Bloc" },
+//     { id: 5, src: JlugSummerSS, alt: "Note Bloc" },
 //     { id: 6, src: NoteBlocSS, alt: "Note Bloc" },
 //     { id: 7, src: NoteBlocSS, alt: "Note Bloc" },
 //     { id: 8, src: NoteBlocSS, alt: "Note Bloc" },

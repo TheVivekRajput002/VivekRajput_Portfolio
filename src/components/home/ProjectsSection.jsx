@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import JlugSummerSS2 from '/assets/SS/JlugSummerSS2.webp'
+import JlugSummerSS from '/assets/SS/JlugSummerSS.webp'
 import KrishiMitraSS from '/assets/SS/KrishiMitraSS.webp'
 import InvoicePlatformSS from '/assets/SS/InvoicePlatformSS.png'
 import HireButSmarterSS from '/assets/SS/HireButSmarterSS.png'
@@ -31,7 +31,7 @@ const ProjectsSection = ({ projects }) => {
     const imageMap = {
         "HireButSmarterSS": HireButSmarterSS,
         "InvoicePlatformSS": InvoicePlatformSS,
-        "JlugSummerSS2": JlugSummerSS2,
+        "JlugSummerSS": JlugSummerSS,
         "BrainFoodSS": BrainFoodSS
     };
 

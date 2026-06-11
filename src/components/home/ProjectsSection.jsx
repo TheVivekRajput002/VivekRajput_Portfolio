@@ -4,6 +4,7 @@ import JlugSummerSS from '/assets/SS/JlugSummerSS.png'
 import KrishiMitraSS from '/assets/SS/KrishiMitraSS.webp'
 import InvoicePlatformSS from '/assets/SS/InvoicePlatformSS.png'
 import HireButSmarterSS from '/assets/SS/HireButSmarterSS.png'
+import AIN2NSS from '/assets/SS/AIN2NSS.png'
 import BrainFoodSS from '/assets/SS/BrainFoodSS.png'
 import { Link } from 'react-router-dom'
 import IconsFlow from './IconsFlow'
@@ -31,7 +32,7 @@ const ProjectsSection = ({ projects }) => {
     const imageMap = {
         "HireButSmarterSS": HireButSmarterSS,
         "InvoicePlatformSS": InvoicePlatformSS,
-        "JlugSummerSS": JlugSummerSS,
+        "AIN2NSS": AIN2NSS,
         "BrainFoodSS": BrainFoodSS
     };
 

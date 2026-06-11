@@ -64,6 +64,40 @@
         ]
     },
     {
+    "head": "AI-N2N",
+    "year": "4th semester",
+    "ss": "/assets/SS/AIN2NSS.png",
+    "tagline": "Interactive, AI-Powered Node-to-Node Workflow Builder & Execution Engine",
+    "problem": "Needed a visual, user-friendly platform to design, version, execute, and monitor complex multi-agent AI workflows without writing repetitive backend integration code.",
+    "highlights": [
+        "Built visual DAG workflow editor with custom nodes, edges, and handles using React Flow",
+        "Implemented robust topological sort (Kahn's Algorithm) execution engine handling skipped branches and node-level inputs",
+        "Integrated Google Gemini, OpenAI, and Groq APIs with dynamic variable extraction and output formatting"
+    ],
+    "impact": "Empowers developers and users to construct and run multi-agent workflows with full step-by-step auditing and latency tracing",
+    "tech": "Next.js, Express, PostgreSQL, Prisma, React Flow, Clerk, Typescript",
+    "github": "https://github.com/TheVivekRajput002/AI-N2N",
+    "url": "https://ai-n2n.vercel.app",
+    "icons": [
+        {
+            "id": 1,
+            "img": "FaReact"
+        },
+        {
+            "id": 2,
+            "img": "RiNextjsFill"
+        },
+        {
+            "id": 3,
+            "img": "SiPrisma"
+        },
+        {
+            "id": 4,
+            "img": "SiPostgresql"
+        }
+    ]
+},
+    {
     "head": "BrainFood",
     "year": "May 2026",
     "ss": "/assets/SS/BrainFoodSS.png",

@@ -6,10 +6,11 @@ export default function InfiniteFlow() {
     { id: 2, src: '/assets/SS/VoiceScribeSS.png', alt: "Voice Scribe" },
     { id: 3, src: '/assets/SS/GDPortfolioSS.png', alt: "GD Portfolio" },
     { id: 4, src: '/assets/SS/KrishiMitraSS.webp', alt: "Krishi Mitra" },
-    { id: 5, src: '/assets/SS/NoteBlocSS.webp', alt: "Note Bloc" },
-    { id: 6, src: '/assets/SS/HireButSmarterSS.png', alt: "HireButSmarter" },
-    { id: 7, src: '/assets/SS/OchiDesignSS.png', alt: "Ochi Design" },
-    { id: 8, src: '/assets/SS/BrainFoodSS.png', alt: "BrainFood" },
+    { id: 5, src: '/assets/SS/AIN2NSS.png', alt: "AI N2N" },
+    { id: 6, src: '/assets/SS/NoteBlocSS.webp', alt: "Note Bloc" },
+    { id: 7, src: '/assets/SS/HireButSmarterSS.png', alt: "HireButSmarter" },
+    { id: 8, src: '/assets/SS/OchiDesignSS.png', alt: "Ochi Design" },
+    { id: 9, src: '/assets/SS/BrainFoodSS.png', alt: "BrainFood" },
   ];
 
   return (

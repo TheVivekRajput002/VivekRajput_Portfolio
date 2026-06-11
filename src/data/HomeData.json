@@ -18,13 +18,13 @@
         },
         {
             "id": 2,
-            "img": "InvoicePlatformSS",
-            "title": "Smart Invoice & E-way bill System",
-            "para": "A modern, full-featured business management application built with Next.js for managing customers, invoices, estimates, and inventory.",
-            "link": "https://hisabkitab1.vercel.app/"
+            "img": "AIN2NSS",
+            "title": "AI-N2N: Visual Workflow Builder & Engine",
+            "para": "An interactive, AI-powered Node-to-Node workflow builder and execution engine enabling developers to construct, version, run, and audit complex pipelines visually.",
+            "link": "https://ai-n2n.vercel.app"
         },
         {
-            "id": 4,
+            "id": 3,
             "img": "BrainFoodSS",
             "title": "FoodReel",
             "para": "Built a full-stack short-form learning platform with reel style videos, scrollable card decks, gamified badge achievements, and a dual Creator/User role system with Google OAuth.",

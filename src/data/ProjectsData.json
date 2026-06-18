@@ -11,7 +11,7 @@
             "Optimized performance for instant load times"
         ],
         "impact": "Successfully landing interviews and freelance opportunities",
-        "tech": "React, Tailwind CSS, Framer Motion",
+        "tech": "React, Tailwind CSS, Framer Motion, MDX",
         "github": "https://github.com/TheVivekRajput002/VivekRajput_Portfolio",
         "url": "https://thevivekrajput-techportfolio.vercel.app",
         "icons": [
@@ -64,77 +64,85 @@
         ]
     },
     {
-    "head": "AI-N2N",
-    "year": "4th semester",
-    "ss": "/assets/SS/AIN2NSS.png",
-    "tagline": "Interactive, AI-Powered Node-to-Node Workflow Builder & Execution Engine",
-    "problem": "Needed a visual, user-friendly platform to design, version, execute, and monitor complex multi-agent AI workflows without writing repetitive backend integration code.",
-    "highlights": [
-        "Built visual DAG workflow editor with custom nodes, edges, and handles using React Flow",
-        "Implemented robust topological sort (Kahn's Algorithm) execution engine handling skipped branches and node-level inputs",
-        "Integrated Google Gemini, OpenAI, and Groq APIs with dynamic variable extraction and output formatting"
-    ],
-    "impact": "Empowers developers and users to construct and run multi-agent workflows with full step-by-step auditing and latency tracing",
-    "tech": "Next.js, Express, PostgreSQL, Prisma, React Flow, Clerk, Typescript",
-    "github": "https://github.com/TheVivekRajput002/AI-N2N",
-    "url": "https://ai-n2n.vercel.app",
-    "icons": [
-        {
-            "id": 1,
-            "img": "FaReact"
-        },
-        {
-            "id": 2,
-            "img": "RiNextjsFill"
-        },
-        {
-            "id": 3,
-            "img": "SiPrisma"
-        },
-        {
-            "id": 4,
-            "img": "SiPostgresql"
-        }
-    ]
-},
+        "head": "AI-N2N",
+        "year": "4th semester",
+        "ss": "/assets/SS/AIN2NSS.png",
+        "tagline": "Interactive, AI-Powered Node-to-Node Workflow Builder & Execution Engine",
+        "problem": "Needed a visual, user-friendly platform to design, version, execute, and monitor complex multi-agent AI workflows without writing repetitive backend integration code.",
+        "highlights": [
+            "Built visual DAG workflow editor with custom nodes, edges, and handles using React Flow",
+            "Implemented robust topological sort (Kahn's Algorithm) execution engine handling skipped branches and node-level inputs",
+            "Integrated Google Gemini, OpenAI, and Groq APIs with dynamic variable extraction and output formatting"
+        ],
+        "impact": "Empowers developers and users to construct and run multi-agent workflows with full step-by-step auditing and latency tracing",
+        "tech": "Next.js, Express, PostgreSQL, Prisma, React Flow, Clerk, Typescript, Vercel-AI-SDK",
+        "github": "https://github.com/TheVivekRajput002/AI-N2N",
+        "url": "https://ai-n2n.vercel.app",
+        "icons": [
+            {
+                "id": 1,
+                "img": "SiNextdotjs"
+            },
+            {
+                "id": 2,
+                "img": "SiClerk"
+            },
+            {
+                "id": 3,
+                "img": "SiTypescript"
+            },
+            {
+                "id": 4,
+                "img": "SiExpress"
+            },
+            {
+                "id": 5,
+                "img": "SiPostgresql"
+            },
+            {
+                "id": 6,
+                "img": "SiPrisma"
+            }
+        ]
+    },
     {
-    "head": "BrainFood",
-    "year": "May 2026",
-    "ss": "/assets/SS/BrainFoodSS.png",
-    "tagline": "Learn, Grow & Get Inspired Through Short-Form Content",
-    "problem": "Needed an engaging way to deliver bite-sized educational content, combining the addictive nature of short-form video with structured micro-learning and gamified progress tracking.",
-    "highlights": [
-        "Built dual-role auth system (User + Creator) with JWT HTTP-only cookies and Google OAuth 2.0",
-        "Engineered event-driven achievement engine that auto-awards tiered badges and tracks scores on every user action",
-        "Integrated ImageKit CDN for optimized video and media delivery with TikTok-style vertical reel feed"
-    ],
-    "impact": "A full-stack learning platform with gamified achievements, scrollable card decks, and creator tools deployed live on Vercel + Render",
-    "tech": "React 19, Node.js, Express 5, MongoDB, Tailwind CSS 4, ImageKit, JWT, Google OAuth",
-    "github": "https://github.com/TheVivekRajput002/FoodReel",
-    "url": "https://foody-reel.vercel.app/",
-    "icons": [
-        {
-            "id": 1,
-            "img": "FaReact"
-        },
-        {
-            "id": 2,
-            "img": "RiTailwindCssFill"
-        },
-        {
-            "id": 3,
-            "img": "FaNode"
-        },
-        {
-            "id": 4,
-            "img": "SiMongodb"
-        },
-        {
-            "id": 5,
-            "img": "SiExpress"
-        }
-    ]
-},
+        "head": "BrainFood",
+        "year": "May 2026",
+        "ss": "/assets/SS/BrainFoodSS.png",
+        "tagline": "Learn, Grow & Get Inspired Through Short-Form Content",
+        "problem": "Needed an engaging way to deliver bite-sized educational content, combining the addictive nature of short-form video with structured micro-learning and gamified progress tracking.",
+        "highlights": [
+            "Built dual-role auth system (User + Creator) with JWT HTTP-only cookies and Google OAuth 2.0",
+            "Engineered event-driven achievement engine that auto-awards tiered badges and tracks scores on every user action",
+            "Integrated ImageKit CDN for optimized video and media delivery with TikTok-style vertical reel feed"
+        ],
+        "impact": "A full-stack learning platform with gamified achievements, scrollable card decks, and creator tools deployed live on Vercel + Render",
+        "tech": "React 19, Node.js, Express 5, MongoDB, Tailwind CSS 4, ImageKit, JWT, Google OAuth",
+        "github": "https://github.com/TheVivekRajput002/FoodReel",
+        "url": "https://foody-reel.vercel.app/",
+        "icons": [
+            {
+                "id": 1,
+                "img": "FaReact"
+            },
+            {
+                "id": 2,
+                "img": "RiTailwindCssFill"
+            },
+            {
+                "id": 3,
+                "img": "FaNode"
+            },
+            {
+                "id": 4,
+                "img": "SiMongodb"
+            },
+            {
+                "id": 5,
+                "img": "SiExpress"
+            }
+        ]
+    },
     {
         "head": "Smart Invoice & E-way bill System",
         "year": "3rd semester",
@@ -362,4 +370,3 @@
         ]
     }
 ]
-

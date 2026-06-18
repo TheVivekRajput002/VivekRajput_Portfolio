@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { Github } from "lucide-react"
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa"
 import { RiTailwindCssFill, RiJavascriptFill, RiGeminiFill } from "react-icons/ri"
-import { SiFramer, SiNextdotjs, SiSupabase, SiTailwindcss, SiGoogle } from "react-icons/si"
+import { SiMongodb, SiFramer, SiNextdotjs, SiSupabase, SiTailwindcss, SiGoogle, SiPrisma, SiPostgresql, SiExpress, SiTypescript, SiClerk } from "react-icons/si"
 
 const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech, role, contributions, icons, year, github }) => {
     const iconComponents = {
@@ -21,7 +21,13 @@ const ProjectCard = ({ Url, Head, SS, tagline, problem, highlights, impact, tech
         FaHtml5,
         FaCss3Alt,
         RiJavascriptFill,
-        RiGeminiFill
+        RiGeminiFill,
+        SiPrisma,
+        SiExpress,
+        SiPostgresql,
+        SiTypescript,
+        SiClerk,
+        SiMongodb
     }
 
     return (

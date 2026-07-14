@@ -17,9 +17,12 @@ import ExpressjsIcon from '/assets/icons/expressjs_.png'
 import NodejsIcon from '/assets/icons/nodejs_.png'
 import MongoDBIcon from '/assets/icons/mongodb_.png'
 import TypescriptIcon from '/assets/icons/TypescriptIcon.png'
-
-
-<img src="" />
+import Nextjss from '/assets/icons/Nextjss.png'
+import NextjsN from '/assets/icons/NextjsN.png'
+import NodejsN from '/assets/icons/NodejsN.png'
+import PostgresqlN from '/assets/icons/PostgresqlN.png'
+import ReactjsN from '/assets/icons/ReactjsN.png'
+import Nodejs from '/assets/icons/Nodejs.png'
 
 
 export default function IconsFlow() {
@@ -30,19 +33,24 @@ export default function IconsFlow() {
     { id: 1, img: HtmlIcon },
     { id: 2, img: CssIcon },
     { id: 3, img: ReactIcon },
-    { id: 4, img: NextjsIcon },
     { id: 5, img: SupabaseIcon },
-    { id: 6, img: PostgresqlIcon },
-    // { id: 7, img: MysqlIcon },
     { id: 8, img: JavascriptIcon },
-    // { id: 9, img: PythonIcon },
-    { id: 10, img: FramermotionIcon },
     { id: 11, img: FigmaIcon },
     { id: 12, img: TailwindcssIcon },
-    { id: 13, img: NodejsIcon },
+    { id: 13, img: Nodejs },
     { id: 14, img: ExpressjsIcon },
     { id: 15, img: MongoDBIcon },
     { id: 16, img: TypescriptIcon },
+    { id: 18, img: NextjsN },
+    { id: 20, img: PostgresqlN },
+    // { id: 4, img: NextjsIcon },
+    // { id: 4, img: Nextjss },
+    // { id: 7, img: MysqlIcon },
+    { id: 9, img: PythonIcon },
+    // { id: 10, img: FramermotionIcon },
+    // { id: 13, img: NodejsIcon },
+    // { id: 17, img: NodejsN },
+    // { id: 6, img: PostgresqlIcon },
   ];
 
   // Duplicate once for seamless loop

@@ -21,7 +21,12 @@ import {
   SiRedis,
   SiPrisma,
   SiPython,
-  SiFastapi
+  SiFastapi,
+  SiDocker,
+  SiNumpy,
+  SiPandas,
+  SiOpencv,
+  SiYolo
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -36,31 +41,43 @@ const techStackData = [
     stack: [
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
-      // { name: "Supabase", icon: SiSupabase },
-      { name: "Clerk", icon: SiClerk },
-      { name: "JWT Auth", icon: SiJsonwebtokens },
+      { name: "FastAPI", icon: SiFastapi },
       { name: "REST APIs", icon: TbApi },
-      // { name: "GraphQL", icon: SiGraphql },
       { name: "Prisma", icon: SiPrisma },
       { name: "Redis", icon: SiRedis },
+      { name: "Clerk", icon: SiClerk },
+      { name: "JWT Auth", icon: SiJsonwebtokens },
       { name: "Vercel AI SDK", icon: SiVercel },
-      { name: "FastAPI", icon: SiFastapi },
+      // { name: "Supabase", icon: SiSupabase },
+      // { name: "GraphQL", icon: SiGraphql },
     ],
   },
-  {
+    {
     id: 2,
-    title: "Frontend",
+    title: "AI & Computer Vision",
     stack: [
-      { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "shadCN UI", icon: SiShadcnui },
+      { name: "Ultralytics YOLO", icon: SiYolo },
+      { name: "OpenCV", icon: SiOpencv },
+      { name: "Numpy", icon: SiNumpy },
       // { name: "Framer Motion", icon: SiFramer },
-      { name: "React.js", icon: FaReact },
+      { name: "Pandas", icon: SiPandas },
       // { name: "Zustand", icon: ZustandIcon },
-      { name: "Next.js", icon: SiNextdotjs },
     ],
   },
   {
     id: 3,
+    title: "Frontend",
+    stack: [
+      { name: "React.js", icon: FaReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "shadCN UI", icon: SiShadcnui },
+      // { name: "Framer Motion", icon: SiFramer },
+      // { name: "Zustand", icon: ZustandIcon },
+    ],
+  },
+  {
+    id: 4,
     title: "Database",
     stack: [
       { name: "PostgreSQL", icon: SiPostgresql },
@@ -68,23 +85,24 @@ const techStackData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Languages",
     stack: [
-      { name: "JavaScript", icon: SiJavascript },
       { name: "TypeScript", icon: SiTypescript },
+      { name: "JavaScript", icon: SiJavascript },
       { name: "Python", icon: SiPython },
     ],
   },
   {
-    id: 5,
-    title: "Tools",
+    id: 6,
+    title: "Tools & DevOps",
     stack: [
-      { name: "Postman", icon: SiPostman },
+      { name: "Docker", icon: SiDocker },
       { name: "Git & Github", icon: SiGithub },
+      { name: "Postman", icon: SiPostman },
       // { name: "Figma", icon: SiFigma },
       { name: "Vercel", icon: SiVercel },
-      { name: "Render", icon: SiRender },
+      // { name: "Render", icon: SiRender },
     ],
   },
 ];

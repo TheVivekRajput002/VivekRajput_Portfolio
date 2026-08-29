@@ -31,7 +31,7 @@ const Footer = () => {
                         <a target="_blank" href="mailto:work.tvivekrajput@gmail.com"  ><Mail height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
                     </div>
                     <div className='hover:scale-108 transition-all ease-in-out duration-120'>
-                        <a target="_blank" href="https://www.linkedin.com/in/vivek-rajput-tvr002/"  ><Linkedin height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/thevivekrajput002/"  ><Linkedin height={20} stroke='var(--color-maintext)' strokeWidth={1.5} /></a>
                     </div>
                     <div className='hover:scale-108 transition-all ease-in-out duration-120'>
 
